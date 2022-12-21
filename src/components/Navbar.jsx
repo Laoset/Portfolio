@@ -1,10 +1,9 @@
 import React, { useState } from 'react'
 import {FaBars, FaTimes} from 'react-icons/fa'
 import { Link } from 'react-scroll'
-
+import DarkMode from './DarkMode'
 const Navbar = () => {
     const [nav, setNav] = useState(false)
-
     const links= [
         {
             id: 1,
@@ -17,7 +16,7 @@ const Navbar = () => {
         {
             id: 3,
             link: 'Proyects'
-        },
+        },  
         {
             id: 4,
             link: 'Skills'
@@ -28,7 +27,7 @@ const Navbar = () => {
         }
     ];
   return (
-    <div className='flex justify-between items-center w-full h-20 text-white fixed bg-black px-4'>
+    <div className='flex justify-between items-center w-full h-20 text-white fixed bg-black px-4 dark:bg-light'>
         <div>
             <h1 className='text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-rose-400 text-5xl font-marca hover:from-red-400 hover:to-red-600'>Kevin</h1>
         </div>
@@ -37,12 +36,13 @@ const Navbar = () => {
             {links.map(({id, link}) => (
                 <li 
                     key={id} 
-                    className='text-xl text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-rose-400 px-4 cursor-pointer font-medium hover:scale-110 duration-200'
+                    className='text-xl text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-rose-400 px-4 cursor-pointer font-bold hover:scale-110 duration-200 dark:bg-dark' 
                 >
                     <Link to={link} smooth duration={500}>{link}</Link>
                 </li>    
             ))}
         </ul>
+        <DarkMode/>
 
         <div onClick={()=> setNav(!nav)} className='cursor-pointer pr-4 z-10 md:hidden'>
             {nav? <FaTimes/> : <FaBars/> }
