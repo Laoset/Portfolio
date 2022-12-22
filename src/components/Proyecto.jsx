@@ -35,8 +35,8 @@ const Proyecto = () => {
                         <img src={src} alt="tiempo" className='h-[60%] w-full rounded-md duration-200 hover:scale-105 mb-2'/>
                         <h2 className='font-semibold text-lg pt-2 text-center'>{title}</h2>
                     <div className='flex items-center justify-center dark:bg-slate-200'>
-                        <button onClick={href} className=' font-semibold w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105 text-slate-50 dark:text-black'>Deploy</button>
-                        <button onClick={code} className='font-semibold w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105 text-slate-50 dark:text-black'>Code</button>
+                        <a href={href} target='_blank' rel='noreferrer' className='cursor-pointer font-semibold w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105 text-slate-50 dark:text-black'>Deploy</a>
+                        <a href={code} target='_blank' rel='noreferrer' className='cursor-pointer font-semibold w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105 text-slate-50 dark:text-black'>Code</a>
                     </div>
                 </div>
             ))
