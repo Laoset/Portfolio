@@ -6,7 +6,7 @@ const Home = () => {
   return (
     <div 
         name='Home' 
-        className='h-screen -mb-20 bg-gradient-to-b from-black to-gray-900 dark:bg-light'
+        className='h-screen  bg-gradient-to-b from-black to-gray-900 dark:bg-light'
     >
         <div 
         className='max-w-screen-lg mx-auto flex flex-col items-center  justify-center h-full pr-4 md:flex-row'
