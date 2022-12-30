@@ -32,16 +32,19 @@ const Navbar = () => {
             <h1 className='text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-rose-400 text-5xl font-marca hover:from-red-400 hover:to-red-600'>Kevin</h1>
         </div>
 
+        <div className='relative right-8'>
         <ul className='hidden md:flex'>
             {links.map(({id, link}) => (
                 <li 
                     key={id} 
-                    className='text-xl text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-rose-400 px-4 cursor-pointer font-bold hover:scale-110 duration-200 dark:bg-dark' 
+                    className=' font-black text-xl text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-rose-400 px-4 cursor-pointer  hover:scale-110 duration-200 dark:bg-dark' 
                 >
                     <Link to={link} smooth duration={500}>{link}</Link>
                 </li>    
             ))}
         </ul>
+        </div>
+        
         <DarkMode/>
 
         <div onClick={()=> setNav(!nav)} className='cursor-pointer pr-4 z-10 md:hidden'>

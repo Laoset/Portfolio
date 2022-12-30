@@ -7,8 +7,8 @@ const Contact = () => {
         className='dark:bg-light bg-gradient-to-b from-black to-gray-900 w-full h-screen p-4'>
         <div className='flex flex-col p-4 justify-center max-w-screen-lg mx-auto h-full'>
             <div className='pb-8'>
-                <p className='text-nuevoWhite text-4xl font-extrabold inline border-b-4 border-gray-500 dark:text-black'>Contact</p>
-                <p className='py-6 text-nuevoWhite dark:text-black'>Submit the form below and chat with me!</p>
+                <p className='font-oswald text-nuevoWhite text-4xl font-extrabold inline border-b-4 border-gray-500 dark:text-black'>Contact</p>
+                <p className='font-cardo py-6 text-nuevoWhite dark:text-black'>Submit the form below and chat with me!</p>
             </div>
 
             <div className='flex justify-center items-center'>
@@ -16,7 +16,7 @@ const Contact = () => {
                     <input type="text" name='name' placeholder='Enter your name' className='p-2 border-2 rounded-md text-white bg-transparent dark:text-black dark:border-nuevoOrange' />
                     <input type="text" name='email' placeholder='Enter your email' className='p-2 border-2 rounded-md text-white my-4 bg-transparent dark:text-black dark:border-nuevoOrange' />
                     <textarea  name="message" placeholder="Enter your message " rows="10" className='p-2 rounded-md bg-transparent border-2 text-white focus:outline-none dark:text-black dark:border-nuevoOrange'></textarea>
-                    <button className='font-bold text-xl bg-gradient-to-r from-red-600 to-red-400 cursor-pointer text-nuevoWhite px-6 py-3 my-8 items-center rounded-md hover:scale-105 duration-300'>Send</button>
+                    <button className='font-cardo font-bold text-xl bg-gradient-to-r from-red-600 to-red-400 cursor-pointer text-nuevoWhite px-6 py-3 my-8 items-center rounded-md hover:scale-105 duration-300'>Send</button>
                 </form>
             </div>
         </div>

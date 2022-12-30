@@ -18,7 +18,7 @@ const DarkMode = () => {
         }
   return (
     <>
-    <button onClick={handleTheme} className='rounded-sm bg-gradient-to-r from-red-600 to-red-400 cursor-pointer py-2  px-4 text-white dark:text-slate-700'>{theme === "dark"? "Dark": "Light"}</button> 
+    <button onClick={handleTheme} className='font-cardo rounded-sm bg-gradient-to-r from-red-600 to-red-400 cursor-pointer py-2  px-4 text-white dark:text-slate-700'>{theme === "dark"? "Dark": "Light"}</button> 
     </>
   )
 

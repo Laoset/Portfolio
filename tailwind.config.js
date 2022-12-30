@@ -18,7 +18,11 @@ module.exports = {
     }
     },
     fontFamily:{
-      marca: ["Kdam Thmor Pro"]
+      marca: ["Kdam Thmor Pro"],
+      habil: ["Barlow Condensed"],
+      navbar: ["Righteous"],
+      oswald: ['Oswald'],
+      cardo: ['Cardo']
     }
   },
   plugins: [],

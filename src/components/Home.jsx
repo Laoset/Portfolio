@@ -1,5 +1,4 @@
 import React from 'react'
-// import ImgPerfil from '../assets/heroImage.jpg'
 import { MdDoubleArrow } from 'react-icons/md';
 import { Link } from 'react-scroll';
 const Home = () => {
@@ -14,14 +13,14 @@ const Home = () => {
             <div className='flex flex-col justify-center  h-full'>
                 <div className='flex justify-center items-center'>
                 <h2 
-                className='pl-4 text-4xl sm:text-7xl font-extrabold text-white dark:text-gray-900 md:pl-0'
+                className='font-oswald pl-4 sm:text-[90px] font-bold text-white dark:text-gray-900 md:pl-0'
                 >Kevin, Full Stack Developer
                 </h2>
                 </div>
 
                 <div className='h-[2px] bg-white mt-4 dark:bg-black'></div>
                 <div className='flex justify-center items-center'>
-                    <p className='text-nuevoWhite py-4 mx-m-md dark:text-black dark:font-semibold '>Apasionado por el Desarrollo Web</p>
+                    <p className='font-cardo text-gray-300 py-4 mx-m-md dark:text-black dark:font-semibold '>Apasionado por el Desarrollo Web</p>
                 </div>
                 <div className='flex justify-center items-center'>
                     <Link to='Proyects' smooth duration={500} className=' group text-white w-fit px-6 py-3 my-2 flex items-center rounded-md bg-gradient-to-r from-red-600 to-red-400 cursor-pointer'>
