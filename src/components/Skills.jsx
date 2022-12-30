@@ -77,7 +77,7 @@ const Skills = () => {
                         <img src={src} alt="" className='w-20 mx-auto'/>
                         <p className='font-habil mt-4 text-lg  dark:text-black'>{title}</p>
                         <div>
-                            <p className='text-xs'>{state}</p>
+                            <p className='text-xs dark:text-black'>{state}</p>
                         </div>
                     </div>
                 ))
