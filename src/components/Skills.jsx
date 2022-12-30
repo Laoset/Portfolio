@@ -64,7 +64,7 @@ const Skills = () => {
         <div className='max-w-screen-lg mx-auto p-4 flex flex-col justify-center w-full h-full text-white'>
             <div>
                 <p className='text-4xl font-extrabold inline border-b-4 border-gray-600 dark:text-gray-900'>Skills</p>
-                <p className='py-6 text-nuevoWhite mx-m-md dark:font-semibold dark:text-black'>These are the technologies I've working with</p>
+                <p className='py-6 text-nuevoWhite mx-m-md dark:font-semibold dark:text-black'>These are the technologies I work with.</p>
             </div>
 
             <div className='w-full grid grid-cols-2 sm:grid-cols-3 gap-8 text-center py-8 px-12 sm:px-0 '>

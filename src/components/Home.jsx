@@ -14,7 +14,7 @@ const Home = () => {
             <div className='flex flex-col justify-center  h-full'>
                 <div className='flex justify-center items-center'>
                 <h2 
-                className='text-4xl sm:text-7xl font-extrabold text-white dark:text-gray-900'
+                className='pl-4 text-4xl sm:text-7xl font-extrabold text-white dark:text-gray-900 md:pl-0'
                 >Kevin, Full Stack Developer
                 </h2>
                 </div>
