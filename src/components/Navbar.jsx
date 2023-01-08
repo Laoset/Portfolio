@@ -29,7 +29,7 @@ const Navbar = () => {
     ];
   return (
     <div className='flex justify-between items-center w-full h-20 text-white fixed bg-casiFondo px-4 dark:bg-light'>
-        <div className='h-16'>
+        <div className=''>
             <h1 className='hover:animate-pulse hover:text-nuevoBoton text-nuevoBoton2  text-5xl font-marca'>#AKCS</h1>
         </div>
 
