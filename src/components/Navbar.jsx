@@ -1,35 +1,36 @@
 import React, { useState } from 'react'
 import {FaBars, FaTimes} from 'react-icons/fa'
 import { Link } from 'react-scroll'
-import DarkMode from './DarkMode'
+import DarkMode from './DarkMode'  
+
 const Navbar = () => {
     const [nav, setNav] = useState(false)
     const links= [
         {
             id: 1,
-            link: 'Home'
+            link: '.home()'
         },
         {
             id: 2,
-            link: 'About'
+            link: '.about()'
         },
         {
             id: 3,
-            link: 'Proyects'
+            link: '.proyects()'
         },  
         {
             id: 4,
-            link: 'Skills'
+            link: '.skills()'
         },
         {
             id: 5,
-            link: 'Contact',
+            link: '.contact()',
         }
     ];
   return (
     <div className='flex justify-between items-center w-full h-20 text-white fixed bg-casiFondo px-4 dark:bg-light'>
-        <div>
-            <h1 className='hover:animate-pulse text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-rose-400 text-5xl font-marca hover:from-red-400 hover:to-red-600'>AKCS</h1>
+        <div className='h-16'>
+            <h1 className='hover:animate-pulse hover:text-nuevoBoton text-nuevoBoton2  text-5xl font-marca'>#AKCS</h1>
         </div>
 
         <div className='relative right-8'>
@@ -37,7 +38,7 @@ const Navbar = () => {
             {links.map(({id, link}) => (
                 <li 
                     key={id} 
-                    className='text-nuevoBoton hover:text-nuevoBoton2 font-black text-2xl px-4 cursor-pointer hover:scale-110 duration-200 ' 
+                    className='text-nuevoBoton hover:text-nuevoBoton2 font-bold text-2xl px-4 cursor-pointer hover:scale-110 duration-200 italic' 
                 >
                     <Link to={link} smooth duration={500}>{link}</Link>
                 </li>    

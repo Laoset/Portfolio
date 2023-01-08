@@ -4,7 +4,7 @@ import { Link } from 'react-scroll';
 const Home = () => {
   return (
     <div 
-        name='Home' 
+        name='.home()' 
         className=' h-screen bg-otroFondo dark:bg-light'
     >
         <div 
@@ -30,12 +30,7 @@ const Home = () => {
                         </span>
                     </Link>
                 </div>
-            </div   >
-
-            {/* <div clas>
-                <img src={ImgPerfil} alt="kevin"
-                    className='rounded-2xl mx-auto w-2/3 md:w-full'/>
-            </div> */}
+            </div>
         </div>
     </div>
   )

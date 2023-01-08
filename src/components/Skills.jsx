@@ -63,7 +63,7 @@ const Skills = () => {
         },
     ]
   return (
-    <div name='Skills' className='bg-otroFondo w-full h-screen dark:bg-light'>
+    <div name='.skills()' className='bg-otroFondo w-full h-screen dark:bg-light'>
         <div className='max-w-screen-lg mx-auto p-4 flex flex-col justify-center w-full h-full text-white'>
             <div>
                 <p className='font-oswald text-4xl font-extrabold inline border-b-4 border-gray-600 dark:text-gray-900'>Skills</p>
