@@ -40,15 +40,15 @@ const Social = () => {
         }
     ]
   return (
-    <div className='hidden lg:flex flex-col top-[35%] left-0 fixed'>
-        <ul>
+    <div className='h-full  lg:flex flex-col justify-center align-middle fixed'>
+        <ul className=''>
             {links.map(({id,child, href, download})=>(
                 <li 
                 key={id}
-                className='flex justify-between items-center w-40 h-14 px-4 ml-[-100px] hover:ml-[-10px] duration-300 hover:rounded-md bg-gray-700'
+                className='flex justify-between items-center w-40 h-14 px-4 ml-[-100px] hover:ml-[-10px] duration-300 hover:rounded-md '
                 >
                 <a 
-                href={href} className='flex justify-between items-center  w-full text-white' download={download} target='_blank' rel='noreferrer'
+                href={href} className='flex justify-between items-center dark:text-black w-full text-white' download={download} target='_blank' rel='noreferrer'
                 >
                     {child}
                 </a>
@@ -60,3 +60,22 @@ const Social = () => {
 }
 
 export default Social
+
+{/* <div className='h-screen hidden lg:flex flex-col top-[35%] left-0 fixed'>
+        <ul>
+            {links.map(({id,child, href, download})=>(
+                <li 
+                key={id}
+                className='flex justify-between items-center w-40 h-14 px-4 ml-[-100px]  bg-gray-700'
+                >
+                <a 
+                href={href} className='flex justify-between items-center  w-full text-white' download={download} target='_blank' rel='noreferrer'
+                >
+                    {child}
+                </a>
+            </li>
+            ))}
+        </ul>
+    </div>
+  )
+} */}

@@ -14,7 +14,12 @@ module.exports = {
     colors: {
       'nuevoWhite': "#efefef",
       'nuevoOrange': '#de2b2b',
-      'nuevoGris': '#393737'
+      'nuevoGris': '#393737',
+      'casiFondo': '#1e1e1e',
+      'otroFondo': '#1f2026',
+      'colorCards': '#363740',
+      'nuevoBoton': '#f6a477',
+      'nuevoBoton2': '#ea7067'
     }
     },
     fontFamily:{

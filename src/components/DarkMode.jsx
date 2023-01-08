@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react'
+import {MdDarkMode, MdOutlineDarkMode} from 'react-icons/md'
 // import ReactSwitch from 'react-switch'
 
 const DarkMode = () => {
@@ -18,7 +19,7 @@ const DarkMode = () => {
         }
   return (
     <>
-    <button onClick={handleTheme} className='hover:animate-pulse font-cardo rounded-sm bg-gradient-to-r from-red-600 to-red-400 cursor-pointer py-2  px-4 text-white dark:text-slate-700'>{theme === "dark"? "Dark": "Light"}</button> 
+    <button onClick={handleTheme} className='hover:animate-pulse font-cardo rounded-md bg-nuevoBoton hover:bg-nuevoBoton2 cursor-pointer py-2  px-4 text-white dark:text-slate-700'>{theme === "dark"? <MdDarkMode size={20}/> : <MdOutlineDarkMode size={20}/>}</button> 
     </>
   )
 

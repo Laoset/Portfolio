@@ -8,13 +8,13 @@ import Social from "./components/Social";
 function App() {
   return (
     <div>
+      <Social/>
       <Navbar/>
       <Home/>
       <About/>
       <Proyecto/>
       <Skills/>
       <Contact/>
-      <Social/>
     </div>
   );
 }
