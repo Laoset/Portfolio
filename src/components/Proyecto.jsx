@@ -1,6 +1,7 @@
 import React from 'react'
 import todo from '../assets/portfolio/todo.jpg'
 import rickMorty from '../assets/portfolio/rickMorty.jpg'
+import shoppingCart from '../assets/portfolio/shopping-carrito.png'
 
 
 const Proyecto = () => {
@@ -20,6 +21,13 @@ const Proyecto = () => {
             code: 'https://github.com/Laoset/RickAndMortyWiki',
             title:'Rick and Morty Wiki'
         },
+        {
+            id:3,
+            src:shoppingCart,
+            href:'https://shooping-cart-kcs.netlify.app/    ',
+            code: 'https://github.com/Laoset/ReduxTest',
+            title:'Shopping Cart'
+        }
     ]
   return (
     <div name='.proyects()' className='w-full text-white md:h-screen bg-otroFondo dark:bg-light'>
