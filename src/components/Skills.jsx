@@ -7,6 +7,7 @@ import tailwind from '../assets/tailwind.png'
 import react from '../assets/react.png'
 import redux from '../assets/redux.png'
 import postgresql from '../assets/postgresql.png'
+import express from '../assets/express2.png'
 
 const Skills = () => {
     const techs=[
@@ -42,24 +43,29 @@ const Skills = () => {
         },
         {
             id:6,
-            src:tailwind,
-            title: 'TAILWIND',
+            src:node,
+            title: 'NODE',
             style:"shadow-red-400",
-            state: 'In progress'
         },
         {
             id:7,
-            src:node,
-            title: 'NODE',
+            src:express,
+            title: 'EXPRESS',
             style:"shadow-red-600",
-            state: 'In progress'
         },
         {
             id:8,
             src:postgresql,
             title: 'POSTGRESQL',
             style:"shadow-red-400",
-            state: 'Coming soon'
+            state: 'In progress'
+        },
+        {
+            id:9,
+            src:tailwind,
+            title: 'TAILWIND',
+            style:"shadow-red-600",
+            state: 'In progress'
         },
     ]
   return (
@@ -74,7 +80,7 @@ const Skills = () => {
             {
                 techs.map(({id,src, title, state})=>(
                     <div key={id} className={`bg-colorCards dark:shadow-sm hover:scale-105 duration-500 dark:bg-slate-200 dark:shadow-nuevoOrange rounded-md py-2`}>
-                        <img src={src} alt="" className='w-20 mx-auto'/>
+                        <img src={src} alt="" className='w-26 mx-auto h-20'/>
                         <p className='font-habil mt-4 text-lg  dark:text-black'>{title}</p>
                         <div>
                             <p className='text-xs dark:text-black'>{state}</p>
