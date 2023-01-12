@@ -35,7 +35,7 @@ const Social = () => {
                 <>
                 Resume <BsFillPersonFill size={30}/>
                 </>),
-            href: '/public/Currículum.pdf',
+            href: '/public/Currículum-Kevin-Corman-Samanamud.pdf',
             download: true,
         }
     ]

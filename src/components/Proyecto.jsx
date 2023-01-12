@@ -1,5 +1,5 @@
 import React from 'react'
-import todo from '../assets/portfolio/todo.jpg'
+import todo from '../assets/portfolio/todoAppNew.png'
 import rickMorty from '../assets/portfolio/rickMorty.jpg'
 import shoppingCart from '../assets/portfolio/shopping-carrito.png'
 
