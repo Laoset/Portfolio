@@ -8,45 +8,44 @@ const Navbar = () => {
     const links= [
         {
             id: 1,
-            link: '.home()'
+            link: '< home />'
         },
         {
             id: 2,
-            link: '.about()'
+            link: '< about />'
         },
         {
             id: 3,
-            link: '.proyects()'
+            link: '< proyects />'
         },  
         {
             id: 4,
-            link: '.skills()'
+            link: '< skills />'
         },
         {
             id: 5,
-            link: '.contact()',
+            link: '< contact />',
         }
     ];
   return (
-    <div className='flex justify-between items-center w-full h-20 text-white fixed bg-casiFondo px-4 dark:bg-light'>
-        <div className=''>
-            <h1 className='hover:animate-pulse hover:text-nuevoBoton text-nuevoBoton2  text-5xl font-marca'>#AKCS</h1>
+    <div className='flex justify-between items-center align-middle w-full h-20 text-white fixed bg-casiFondo px-4 dark:bg-light'>
+        <div className='p-3'>
+            <h1 className='hover:animate-pulse text-demas  text-5xl font-marca cursor-default'>#AKCS</h1>
         </div>
 
-        <div className='relative right-8'>
-        <ul className='hidden md:flex'>
+        <div className=''>
+        <ul className='hidden md:flex  items-center align-middle justify-center'>
             {links.map(({id, link}) => (
                 <li 
                     key={id} 
-                    className='text-nuevoBoton hover:text-nuevoBoton2 font-bold text-2xl px-4 cursor-pointer hover:scale-110 duration-200 italic' 
+                    className='dark:text-black font-fireCode text-white hover:text-demas font-semibold text-[18px] px-3 cursor-pointer hover:scale-110 duration-200 italic tracking-tight' 
                 >
                     <Link to={link} smooth duration={500}>{link}</Link>
                 </li>    
             ))}
+            <DarkMode/>
         </ul>
         </div>
-        
-        <DarkMode/>
 
         <div onClick={()=> setNav(!nav)} className='cursor-pointer pr-4 z-10 md:hidden'>
             {nav? <FaTimes/> : <FaBars/> }

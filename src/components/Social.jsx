@@ -41,11 +41,11 @@ const Social = () => {
     ]
   return (
     <div className='h-full  lg:flex flex-col justify-center align-middle fixed'>
-        <ul className=''>
+        <div>
             {links.map(({id,child, href, download})=>(
                 <li 
                 key={id}
-                className='flex justify-between items-center w-40 h-14 px-4 ml-[-100px] hover:ml-[-10px] duration-300 hover:rounded-md '
+                className=' flex justify-between items-center w-40 h-14 px-4 ml-[-100px] hover:ml-[-10px] duration-300 hover:rounded-md bg-nuevo2'
                 >
                 <a 
                 href={href} className='flex justify-between items-center dark:text-black w-full text-white' download={download} target='_blank' rel='noreferrer'
@@ -54,7 +54,7 @@ const Social = () => {
                 </a>
             </li>
             ))}
-        </ul>
+        </div>
     </div>
   )
 }

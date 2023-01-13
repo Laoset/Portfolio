@@ -19,7 +19,7 @@ const DarkMode = () => {
         }
   return (
     <>
-    <button onClick={handleTheme} className='hover:animate-pulse font-cardo rounded-md bg-nuevoBoton hover:bg-nuevoBoton2 cursor-pointer py-2  px-4 text-white dark:text-slate-700'>{theme === "dark"? <MdDarkMode size={20}/> : <MdOutlineDarkMode size={20}/>}</button> 
+    <button onClick={handleTheme} className='hover:animate-pulse font-cardo rounded-md  cursor-pointer py-1  ml-2 text-white dark:text-slate-700'>{theme === "dark"? <MdDarkMode size={20}/> : <MdOutlineDarkMode size={20}/>}</button> 
     </>
   )
 

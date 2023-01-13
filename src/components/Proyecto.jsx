@@ -30,11 +30,11 @@ const Proyecto = () => {
         }
     ]
   return (
-    <div name='.proyects()' className='w-full text-white md:h-screen bg-otroFondo dark:bg-light'>
+    <div name='< proyects />' className='w-full text-white md:h-screen bg-otroFondo dark:bg-light'>
         <div className='max-w-screen-lg p-4 mx-auto flex flex-col justify-center w-full h-full'>
             <div className='pb-4'>
                 <p className='font-oswald text-4xl font-extrabold inline border-b-4 border-gray-600 dark:text-gray-900'>Proyects</p>
-                <p className='font-cardo py-6 text-nuevoWhite mx-m-md dark:font-semibold dark:text-black text-lg'>Look my proyects, i await your feedback.</p>
+                <p className='font-fireCode py-6 text-nuevoWhite mx-m-md dark:font-semibold dark:text-black text-lg'>Look my proyects, i await your feedback.</p>
             </div>
             <div className='grid sm:grid-cols-2 md:grid-cols-3 gap-8 px-12 sm:px-0'>
             {
