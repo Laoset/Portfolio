@@ -4,7 +4,7 @@ const Contact = () => {
   return (
     <div 
         name='< contact />' 
-        className='dark:bg-light bg-otroFondo w-full h-screen p-4'>
+        className='dark:bg-light bg-otroFondo w-full h-screen p-4 pt-28'>
         <div className='flex flex-col p-4 justify-center max-w-screen-lg mx-auto h-full'>
             <div className='pb-8'>
                 <p className='font-oswald text-nuevoWhite text-4xl font-extrabold inline border-b-4 border-gray-500 dark:text-black'>Contact</p>
@@ -18,6 +18,9 @@ const Contact = () => {
                     <textarea  name="message" placeholder="Message" rows="10" className='border-2 border-solid border-slate-400 p-2 resize-none rounded-md bg-transparent shadow-sm text-white bg-colorCards dark:bg-slate-200 focus:outline-none dark:text-black dark:shadow-nuevoOrange'></textarea>
                     <button className=' font-fireCode font-bold text-lg  bg-nuevo cursor-pointer text-nuevoWhite px-6 py-3 my-8 items-center rounded-md hover:scale-105 duration-300'>Send</button>
                 </form>
+            </div>
+            <div className='flex justify-center text-center mt-28'>
+                <h2 className='text-white'>- Hecho con ❤️ por Alan Kevin Corman Samanamud -</h2>
             </div>
         </div>
     </div>
