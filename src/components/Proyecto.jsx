@@ -3,7 +3,7 @@ import todo from "../assets/portfolio/todoAppNew.png";
 import rickMorty from "../assets/portfolio/rickMorty.jpg";
 import shoppingCart from "../assets/portfolio/shopping-carrito.png";
 import icare from "../assets/portfolio/icare.png";
-import perros from "../assets/portfolio/perros.png";
+import perros from "../assets/portfolio/perros2.png";
 
 const Proyecto = () => {
   const portfolios = [
