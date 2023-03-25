@@ -89,9 +89,9 @@ const Skills = () => {
   return (
     <div
       name="< tecnologías />"
-      className="bg-otroFondo w-full md:h-screen dark:bg-light"
+      className="w-full text-white md:h-screen  bg-otroFondo dark:bg-light"
     >
-      <div className="max-w-screen-lg mx-auto p-4 flex flex-col justify-center w-full h-full text-white">
+      <div className="max-w-screen-lg p-4 mx-auto flex flex-col justify-center w-full h-full">
         <div className="pb-4">
           <p className="font-oswald text-4xl font-extrabold inline border-b-4 border-gray-600 dark:text-gray-900">
             Tecnologías
@@ -104,7 +104,7 @@ const Skills = () => {
           {techs.map(({ id, src, title }) => (
             <div
               key={id}
-              className={`w-2/3 bg-colorCards dark:shadow-sm hover:scale-105 duration-500 dark:bg-slate-200 dark:shadow-nuevoOrange rounded-md py-2`}
+              className={`bg-colorCards dark:shadow-sm hover:scale-105 duration-500 dark:bg-slate-200 dark:shadow-nuevoOrange rounded-md py-2 sm:mr-20 mr-0`}
             >
               <img src={src} alt="" className="w-26 mx-auto h-20" />
               <p className="font-fireCode mt-1 text-lg  dark:text-black">

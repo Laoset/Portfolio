@@ -71,7 +71,7 @@ const Proyecto = () => {
               <h2 className="dark:text-black font-cardo font-semibold text-lg pt-2 text-center">
                 {title}
               </h2>
-              <div className="flex items-center justify-center dark:bg-slate-200">
+              <div className="flex items-center justify-center dark:bg-slate-200 dark:shadow  shadow-sm">
                 <a
                   href={href}
                   target="_blank"

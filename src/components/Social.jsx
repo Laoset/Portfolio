@@ -44,7 +44,7 @@ const Social = () => {
     },
   ];
   return (
-    <div className="h-full  lg:flex flex-col justify-center align-middle fixed">
+    <div className="hidden h-full xl:flex flex-col justify-center align-middle fixed">
       <div>
         {links.map(({ id, child, href, download }) => (
           <li

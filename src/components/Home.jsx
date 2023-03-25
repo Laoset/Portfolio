@@ -3,11 +3,11 @@ import { MdDoubleArrow } from "react-icons/md";
 import { Link } from "react-scroll";
 const Home = () => {
   return (
-    <div name="< inicio />" className=" h-[50rem] bg-otroFondo dark:bg-light">
+    <div name="< inicio />" className="h-screen bg-otroFondo dark:bg-light p-4">
       <div className="max-w-screen-lg mx-auto h-full pr-4 md:flex-row">
         <div className="flex flex-col justify-center h-full">
-          <div className="">
-            <h2 className="mt-36 font-oswald pl-4 sm:text-[90px] font-bold text-white dark:text-gray-900 md:pl-0">
+          <div className="flex justify-center items-center ">
+            <h2 className="mt-36 font-oswald xl:pl-0 xl:text-[90px] lg:text-[80px] sm:text-[55px] text-[35px] font-bold text-white dark:text-gray-900 ">
               Kevin, Full Stack Developer
             </h2>
           </div>
