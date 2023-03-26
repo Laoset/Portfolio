@@ -4,7 +4,7 @@ import rickMorty from "../assets/portfolio/rickMorty.jpg";
 import shoppingCart from "../assets/portfolio/shopping-carrito.png";
 import icare from "../assets/portfolio/icare.png";
 import perros from "../assets/portfolio/perros2.png";
-
+import gamecenter from "../assets/portfolio/gameCenter.png";
 const Proyecto = () => {
   const portfolios = [
     {
@@ -30,13 +30,20 @@ const Proyecto = () => {
     },
     {
       id: 4,
+      src: gamecenter,
+      href: "https://game-center-akcs.netlify.app/",
+      code: "https://github.com/Laoset/gameCenter",
+      title: "Game Center",
+    },
+    {
+      id: 5,
       src: shoppingCart,
       href: "https://shooping-cart-kcs.netlify.app/    ",
       code: "https://github.com/Laoset/ReduxTest",
       title: "Shopping Cart",
     },
     {
-      id: 5,
+      id: 6,
       src: todo,
       href: "https://kevin-corman-todo-app.netlify.app/",
       code: "https://github.com/Laoset/TodoApp",
