@@ -11,7 +11,7 @@ import express from "../assets/express2.png";
 import git from "../assets/git.png";
 import sequelize from "../assets/sequelize.png";
 import material from "../assets/material.png";
-const Skills = () => {
+const Skills = ({ isEnglish }) => {
   const techs = [
     {
       id: 1,
@@ -87,34 +87,67 @@ const Skills = () => {
     },
   ];
   return (
-    <div
-      name="< tecnologías />"
-      className="w-full text-white md:h-screen  bg-otroFondo dark:bg-light"
-    >
-      <div className="max-w-screen-lg p-4 mx-auto flex flex-col justify-center w-full h-full">
-        <div className="pb-4">
-          <p className="font-oswald text-4xl font-extrabold inline border-b-4 border-gray-600 dark:text-gray-900">
-            Tecnologías
-          </p>
-          <p className="text-lg font-fireCode py-6 text-nuevoWhite mx-m-md dark:font-semibold dark:text-black">
-            Estas son las tecnologías en las cuales he trabajado.
-          </p>
-        </div>
-        <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8 px-12 sm:px-0 text-center">
-          {techs.map(({ id, src, title }) => (
-            <div
-              key={id}
-              className={`bg-colorCards dark:shadow-sm hover:scale-105 duration-500 dark:bg-slate-200 dark:shadow-nuevoOrange rounded-md py-2 sm:mr-20 mr-0`}
-            >
-              <img src={src} alt="" className="w-26 mx-auto h-20" />
-              <p className="font-fireCode mt-1 text-lg  dark:text-black">
-                {title}
+    <>
+      {isEnglish === false ? (
+        <div
+          name="< tecnologías />"
+          className="w-full text-white md:h-screen  bg-otroFondo dark:bg-light"
+        >
+          <div className="max-w-screen-lg p-4 mx-auto flex flex-col justify-center w-full h-full">
+            <div className="pb-4">
+              <p className="font-oswald text-4xl font-extrabold inline border-b-4 border-gray-600 dark:text-gray-900">
+                Tecnologías
+              </p>
+              <p className="text-lg font-fireCode py-6 text-nuevoWhite mx-m-md dark:font-semibold dark:text-black">
+                Estas son las tecnologías en las cuales he trabajado.
               </p>
             </div>
-          ))}
+            <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8 px-12 sm:px-0 text-center">
+              {techs.map(({ id, src, title }) => (
+                <div
+                  key={id}
+                  className={`bg-colorCards dark:shadow-sm hover:scale-105 duration-500 dark:bg-slate-200 dark:shadow-nuevoOrange rounded-md py-2 sm:mr-20 mr-0`}
+                >
+                  <img src={src} alt="" className="w-26 mx-auto h-20" />
+                  <p className="font-fireCode mt-1 text-lg  dark:text-black">
+                    {title}
+                  </p>
+                </div>
+              ))}
+            </div>
+          </div>
         </div>
-      </div>
-    </div>
+      ) : (
+        <div
+          name="< technologies />"
+          className="w-full text-white md:h-screen  bg-otroFondo dark:bg-light"
+        >
+          <div className="max-w-screen-lg p-4 mx-auto flex flex-col justify-center w-full h-full">
+            <div className="pb-4">
+              <p className="font-oswald text-4xl font-extrabold inline border-b-4 border-gray-600 dark:text-gray-900">
+                Technologies
+              </p>
+              <p className="text-lg font-fireCode py-6 text-nuevoWhite mx-m-md dark:font-semibold dark:text-black">
+                These are the technologies on which I have worked.
+              </p>
+            </div>
+            <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8 px-12 sm:px-0 text-center">
+              {techs.map(({ id, src, title }) => (
+                <div
+                  key={id}
+                  className={`bg-colorCards dark:shadow-sm hover:scale-105 duration-500 dark:bg-slate-200 dark:shadow-nuevoOrange rounded-md py-2 sm:mr-20 mr-0`}
+                >
+                  <img src={src} alt="" className="w-26 mx-auto h-20" />
+                  <p className="font-fireCode mt-1 text-lg  dark:text-black">
+                    {title}
+                  </p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      )}
+    </>
   );
 };
 

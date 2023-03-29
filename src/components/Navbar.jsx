@@ -1,32 +1,49 @@
 import React, { useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
+import { MdDarkMode } from "react-icons/md";
+import { BsSun } from "react-icons/bs";
 import { Link } from "react-scroll";
 import DarkMode from "./DarkMode";
 
-const Navbar = () => {
+const Navbar = ({ isEnglish, onLanguageToggle }) => {
   const [nav, setNav] = useState(false);
+  const handleColor = () => {
+    if (getState.value !== "dark") {
+      document.documentElement.classList.add("dark");
+    } else {
+      document.documentElement.classList.remove("dark");
+    }
+    setNav(!nav);
+  };
+  const handleLang = () => {
+    onLanguageToggle();
+    setNav(!nav);
+  };
+  const getState = document.documentElement.classList;
+  const estadin = document.documentElement.classList.value;
   const links = [
     {
       id: 1,
-      link: "< inicio />",
+      link: `${isEnglish === false ? "< inicio />" : "< home />"}`,
     },
     {
       id: 2,
-      link: "< sobre mi />",
+      link: `${isEnglish === false ? "< sobre mi />" : "< about me />"}`,
     },
     {
       id: 3,
-      link: "< proyectos />",
+      link: `${isEnglish === false ? "< proyectos />" : "< projects />"}`,
     },
     {
       id: 4,
-      link: "< tecnologías />",
+      link: `${isEnglish === false ? "< tecnologías />" : "< technologies />"}`,
     },
     {
       id: 5,
-      link: "< contacto />",
+      link: `${isEnglish === false ? "< contacto />" : "< contact />"}`,
     },
   ];
+
   return (
     <div className="flex justify-between items-center align-middle w-full h-20 text-white fixed bg-casiFondo px-4 dark:bg-light">
       <div className="p-3">
@@ -48,14 +65,35 @@ const Navbar = () => {
             </li>
           ))}
           <DarkMode />
+          <div className="ml-1">
+            {isEnglish === false ? (
+              <button
+                onClick={onLanguageToggle}
+                alt="United States"
+                src="https://catamphetamine.gitlab.io/country-flag-icons/3x2/US.svg"
+                className="w-10 h-6 dark:text-black text-sm"
+              >
+                Eng
+              </button>
+            ) : (
+              <button
+                onClick={onLanguageToggle}
+                alt="United States"
+                src="https://catamphetamine.gitlab.io/country-flag-icons/3x2/ES.svg"
+                className="w-10 h-6 dark:text-black text-sm "
+              >
+                Spa
+              </button>
+            )}
+          </div>
         </ul>
       </div>
 
       <div
         onClick={() => setNav(!nav)}
-        className="cursor-pointer pr-4 z-10 md:hidden"
+        className="cursor-pointer pr-4 z-10 md:hidden "
       >
-        {nav ? <FaTimes /> : <FaBars />}
+        {nav ? <FaTimes /> : <FaBars className="dark:text-black" />}
       </div>
       {nav ? (
         <ul className="flex flex-col justify-center items-center absolute top-0 left-0 w-full h-screen bg-black">
@@ -71,6 +109,37 @@ const Navbar = () => {
               </Link>
             </li>
           ))}
+          <div className="flex flex-row gap-14 mt-6">
+            <div>
+              {estadin === "dark" ? (
+                <MdDarkMode onClick={handleColor} />
+              ) : (
+                <BsSun onClick={handleColor} />
+              )}
+            </div>
+
+            <div>
+              {isEnglish === false ? (
+                <button
+                  onClick={handleLang}
+                  alt="United States"
+                  src="https://catamphetamine.gitlab.io/country-flag-icons/3x2/US.svg"
+                  className="w-10 h-6"
+                >
+                  Eng
+                </button>
+              ) : (
+                <button
+                  onClick={handleLang}
+                  alt="United States"
+                  src="https://catamphetamine.gitlab.io/country-flag-icons/3x2/ES.svg"
+                  className="w-10 h-6"
+                >
+                  Spa
+                </button>
+              )}
+            </div>
+          </div>
         </ul>
       ) : null}
     </div>
