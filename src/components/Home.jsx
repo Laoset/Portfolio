@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import { MdDoubleArrow } from "react-icons/md";
 import { Link } from "react-scroll";
 import Typewriter from "typewriter-effect";

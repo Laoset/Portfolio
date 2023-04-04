@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
 import { MdDarkMode } from "react-icons/md";
 import { BsSun } from "react-icons/bs";
