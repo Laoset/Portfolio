@@ -12,42 +12,105 @@ const Proyecto = ({ isEnglish }) => {
       src: icare,
       href: "https://pf-grupo-2.vercel.app/",
       code: "https://github.com/ezequielnores/PF-GRUPO-2",
+      parrafo:
+        "Participación en un equipo de desarrollo ágil con sprints de una semana presentando a un Product Owner avances sobre el desarrollo de una App completa de Atención sanitaria digital.",
+      tech: [
+        "https://icongr.am/devicon/react-original.svg?size=128&color=ffffff",
+        "https://www.svgrepo.com/show/303557/redux-logo.svg",
+        "https://icongr.am/devicon/nodejs-original.svg?size=128&color=ffffff",
+        "https://icongr.am/devicon/express-original.svg?size=128&color=000000",
+        "https://icongr.am/devicon/postgresql-original.svg?size=128&color=ffffff",
+        "https://www.svgrepo.com/show/354048/material-ui.svg",
+      ],
+
       title: "iCare",
+      parrafoEng:
+        "Participation in an agile development team with one-week sprints presenting to a Product Owner progress on the development of a complete Digital Healthcare App.",
     },
     {
       id: 2,
-      src: perros,
-      href: "https://deploy-perritos.vercel.app/",
-      code: "https://github.com/Laoset/DeployPerritos",
-      title: "Wiki Perri",
-    },
-    {
-      id: 3,
-      src: rickMorty,
-      href: "https://kevin-corman-rickmorty.netlify.app/",
-      code: "https://github.com/Laoset/RickAndMortyWiki",
-      title: "Rick and Morty Wiki",
-    },
-    {
-      id: 4,
       src: gamecenter,
       href: "https://game-center-akcs.netlify.app/",
       code: "https://github.com/Laoset/gameCenter",
+      parrafo:
+        "Aplicación que contiene 3 juegos : Memotest - WPM - Pokemon Finder",
       title: "Game Center",
+      tech: [
+        "https://icongr.am/devicon/typescript-original.svg?size=128&color=ffffff",
+        "https://icongr.am/devicon/react-original.svg?size=128&color=ffffff",
+        "https://www.svgrepo.com/show/374118/tailwind.svg",
+      ],
+      parrafoEng:
+        "Application containing 3 games : Memotest - WPM - Pokemon Finder",
     },
+    {
+      id: 3,
+      src: perros,
+      href: "https://deploy-perritos.vercel.app/",
+      code: "https://github.com/Laoset/DeployPerritos",
+      parrafo:
+        "Diseño  y desarrollo una App sobre raza de perros que incluía: búsquedas, filtrados combinados, ordenamientos, consumo de API, creación, modificación y eliminación de razas.",
+      title: "Wiki Perri",
+      tech: [
+        "https://icongr.am/devicon/react-original.svg?size=128&color=ffffff",
+        "https://www.svgrepo.com/show/303557/redux-logo.svg",
+        "https://icongr.am/devicon/nodejs-original.svg?size=128&color=ffffff",
+        "https://icongr.am/devicon/express-original.svg?size=128&color=000000",
+        "https://icongr.am/devicon/postgresql-original.svg?size=128&color=ffffff",
+        "https://icongr.am/devicon/css3-original.svg?size=128&color=currentColor",
+      ],
+      parrafoEng:
+        "Design and development of a dog breed App that included: searches, combined filtering, sorting, API consumption, creation, modification and deletion of breeds.",
+    },
+    {
+      id: 4,
+      src: rickMorty,
+      href: "https://kevin-corman-rickmorty.netlify.app/",
+      code: "https://github.com/Laoset/RickAndMortyWiki",
+      parrafo:
+        "Aplicación que mediante el consumo de la API rick and morty, permite : búsquedas, filtros, ordenamientos, sección favoritos y login.",
+      title: "Rick and Morty Wiki",
+      tech: [
+        "https://icongr.am/devicon/react-original.svg?size=128&color=ffffff",
+        "https://www.svgrepo.com/show/303557/redux-logo.svg",
+        "https://icongr.am/devicon/css3-original.svg?size=128&color=currentColor",
+      ],
+      parrafoEng:
+        "Application that by using the rick and morty API, allows: searches, filters, sorting, favorites section and login.",
+    },
+
     {
       id: 5,
       src: shoppingCart,
-      href: "https://shooping-cart-kcs.netlify.app/    ",
+      href: "https://shooping-cart-kcs.netlify.app/",
       code: "https://github.com/Laoset/ReduxTest",
+      parrafo:
+        "Simulador de carrito de compras, incluye: filtrar por tipo de producto, registro e inicio de sesión y eliminación e inclusión de productos.",
       title: "Shopping Cart",
+      tech: [
+        "https://icongr.am/devicon/react-original.svg?size=128&color=ffffff",
+        "https://www.svgrepo.com/show/303557/redux-logo.svg",
+        "https://www.svgrepo.com/show/374118/tailwind.svg",
+        "https://icongr.am/devicon/nodejs-original.svg?size=128&color=ffffff",
+        "https://icongr.am/devicon/express-original.svg?size=128&color=000000",
+      ],
+      parrafoEng:
+        "Shopping cart simulator, including: filtering by product type, registration and login, and product deletion and inclusion.",
     },
     {
       id: 6,
       src: todo,
       href: "https://kevin-corman-todo-app.netlify.app/",
       code: "https://github.com/Laoset/TodoApp",
+      parrafo: "Aplicacion que permite crear, modificar y eliminar tareas.",
       title: "Todo App",
+      tech: [
+        "https://icongr.am/devicon/react-original.svg?size=128&color=ffffff",
+        "https://www.svgrepo.com/show/303557/redux-logo.svg",
+        "https://www.svgrepo.com/show/374118/tailwind.svg",
+      ],
+      parrafoEng:
+        "Application that allows you to create, modify and delete tasks.",
     },
   ];
   return (
@@ -55,103 +118,147 @@ const Proyecto = ({ isEnglish }) => {
       {isEnglish === false ? (
         <div
           name="< proyectos />"
-          className="w-full text-white md:h-screen bg-otroFondo dark:bg-light"
+          className=" flex flex-col justify-center w-full md:h-full  bg-otroFondo dark:bg-light font-fireCode "
         >
-          <div className="max-w-screen-lg p-4 mx-auto flex flex-col justify-center w-full h-full">
-            <div className="pb-4">
-              <p className="font-oswald text-4xl font-extrabold inline border-b-4 border-gray-600 dark:text-gray-900">
-                Proyectos
-              </p>
-              <p className="font-fireCode py-6 text-nuevoWhite mx-m-md dark:font-semibold dark:text-black text-lg">
-                Estos son mis proyectos concluidos, ¡espero tu feedback!
+          <div className="max-w-screen-xl px-4 py-24 mx-auto flex flex-col justify-center w-full h-full">
+            <div>
+              <p className="font-oswald text-5xl font-extrabold inline border-b-4 border-gray-600 dark:text-gray-900 text-white">
+                {"< Proyectos />"}
               </p>
             </div>
-            <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-10  sm:px-0">
-              {portfolios.map(({ id, src, title, href, code }) => (
-                <div
-                  key={id}
-                  className="rounded-lg bg-colorCards dark:bg-slate-200  hover:scale-105 duration-200"
-                >
-                  <img
-                    src={src}
-                    alt="tiempo"
-                    className="h-[60%] w-full rounded-md mb-2"
-                  />
-                  <h2 className="dark:text-black font-cardo font-semibold text-lg pt-2 text-center">
-                    {title}
-                  </h2>
-                  <div className="flex items-center justify-center dark:bg-slate-200 dark:shadow  shadow-sm">
-                    <a
-                      href={href}
-                      target="_blank"
-                      rel="noreferrer"
-                      className="font-cardo cursor-pointer font-semibold w-1/2 px-10 py-3 m-4 duration-200 hover:scale-105 text-slate-50 dark:text-black"
-                    >
-                      Deploy
-                    </a>
-                    <a
-                      href={code}
-                      target="_blank"
-                      rel="noreferrer"
-                      className="font-cardo cursor-pointer font-semibold w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105 text-slate-50 dark:text-black"
-                    >
-                      Code
-                    </a>
+            <p className="font-fireCode py-6 text-nuevoWhite mx-m-md dark:font-semibold dark:text-black text-lg">
+              Estos son mis proyectos concluidos, ¡espero tu feedback!
+            </p>
+
+            <div className="flex flex-col h-full mt-3 w-full gap-12">
+              {portfolios.map(
+                ({ id, src, title, href, code, parrafo, tech }) => (
+                  <div
+                    key={id}
+                    className="dark:shadow-sm hover:scale-105 duration-500 dark:bg-slate-200 flex xl:flex-row flex-col xl:h-80 w-full xl:gap-16 border-solid border-2 border-slate-600 p-3"
+                  >
+                    <div className="flex flex-col justify-between xl:w-2/4 text-center">
+                      <div className="flex flex-col h-full w-full gap-6 ">
+                        <h2 className="text-start uppercase text-2xl font-fireCode mt-4 dark:text-black text-white font-bold">
+                          {title}
+                        </h2>
+                        <p className="text-nuevoWhite dark:text-black text-justify">
+                          {parrafo}
+                        </p>
+                      </div>
+                      <div className="flex flex-row justify-center">
+                        {tech?.map((imagen) => (
+                          <img
+                            className="w-16 h-9"
+                            src={imagen}
+                            alt="imagen"
+                            key={imagen}
+                          />
+                        ))}
+                      </div>
+                      <div className="flex flex-row justify-around mt-6 ">
+                        <a
+                          href={href}
+                          target="_blank"
+                          rel="noreferrer"
+                          className="dark:text-nuevoWhite bg-nuevo font-cardo cursor-pointer duration-150 font-semibold hover:rotate-3 hover:-rotate-3 text-slate-50  rounded-md px-5 py-1 w-24"
+                        >
+                          Deploy
+                        </a>
+                        <a
+                          href={code}
+                          target="_blank"
+                          rel="noreferrer"
+                          className="dark:text-nuevoWhite bg-nuevo font-cardo cursor-pointer font-semibold duration-150 hover:rotate-3 hover:-rotate-3 text-slate-50 dark:text-black rounded-md px-5 py-1 w-24"
+                        >
+                          Code
+                        </a>
+                      </div>
+                    </div>
+                    <div className="xl:w-[45%] py-4">
+                      <img
+                        src={src}
+                        alt="tiempo"
+                        className="w-full h-full rounded-sm"
+                      />
+                    </div>
                   </div>
-                </div>
-              ))}
+                )
+              )}
             </div>
           </div>
         </div>
       ) : (
         <div
           name="< projects />"
-          className="w-full text-white md:h-screen bg-otroFondo dark:bg-light"
+          className=" flex flex-col justify-center w-full md:h-full  bg-otroFondo dark:bg-light font-fireCode "
         >
-          <div className="max-w-screen-lg p-4 mx-auto flex flex-col justify-center w-full h-full">
-            <div className="pb-4">
-              <p className="font-oswald text-4xl font-extrabold inline border-b-4 border-gray-600 dark:text-gray-900">
-                Projects
-              </p>
-              <p className="font-fireCode py-6 text-nuevoWhite mx-m-md dark:font-semibold dark:text-black text-lg">
-                These are my completed projects, I look forward to your
-                feedback!
+          <div className="max-w-screen-xl px-4 py-24 mx-auto flex flex-col justify-center w-full h-full">
+            <div>
+              <p className="font-oswald text-5xl font-extrabold inline border-b-4 border-gray-600 dark:text-gray-900 text-white">
+                {"< Projects />"}
               </p>
             </div>
-            <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-10 px-12 sm:px-0 text-center">
-              {portfolios.map(({ id, src, title, href, code }) => (
-                <div
-                  key={id}
-                  className="rounded-lg bg-colorCards dark:bg-slate-200  hover:scale-105 duration-200 m-2 "
-                >
-                  <img
-                    src={src}
-                    alt="tiempo"
-                    className="h-[60%] w-full rounded-md mb-2"
-                  />
-                  <h2 className="dark:text-black font-cardo font-semibold text-lg pt-2 text-center">
-                    {title}
-                  </h2>
-                  <div className="flex items-center justify-center dark:bg-slate-200 dark:shadow  shadow-sm">
-                    <a
-                      href={href}
-                      target="_blank"
-                      rel="noreferrer"
-                      className="font-cardo cursor-pointer font-semibold w-1/2 px-10 py-3 m-4 duration-200 hover:scale-105 text-slate-50 dark:text-black"
-                    >
-                      Deploy
-                    </a>
-                    <a
-                      href={code}
-                      target="_blank"
-                      rel="noreferrer"
-                      className="font-cardo cursor-pointer font-semibold w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105 text-slate-50 dark:text-black"
-                    >
-                      Code
-                    </a>
+            <p className="font-fireCode py-6 text-nuevoWhite mx-m-md dark:font-semibold dark:text-black text-lg">
+              These are my completed projects, I look forward to your feedback!
+            </p>
+
+            <div className="flex flex-col h-full mt-3 w-full gap-12">
+              {portfolios.map(
+                ({ id, src, title, href, code, parrafoEng, tech }) => (
+                  <div
+                    key={id}
+                    className="dark:shadow-sm hover:scale-105 duration-500 dark:bg-slate-200 flex xl:flex-row flex-col xl:h-80 w-full xl:gap-16 border-solid border-2 border-slate-600 p-3"
+                  >
+                    <div className="flex flex-col justify-between xl:w-2/4 text-center">
+                      <div className="flex flex-col h-full w-full gap-4 ">
+                        <h2 className="text-start uppercase text-2xl font-fireCode mt-4 dark:text-black text-white font-bold">
+                          {title}
+                        </h2>
+                        <p className="text-nuevoWhite dark:text-black text-justify">
+                          {parrafoEng}
+                        </p>
+                      </div>
+                      <div className="flex flex-row justify-center">
+                        {tech?.map((imagen) => (
+                          <img
+                            className="w-16 h-9"
+                            src={imagen}
+                            alt="imagen"
+                            key={imagen}
+                          />
+                        ))}
+                      </div>
+
+                      <div className="flex flex-row justify-around mt-6">
+                        <a
+                          href={href}
+                          target="_blank"
+                          rel="noreferrer"
+                          className="dark:text-nuevoWhite bg-nuevo font-cardo cursor-pointer duration-150 font-semibold hover:rotate-3 hover:-rotate-3 text-slate-50 dark:text-black rounded-md px-5 py-1 w-24"
+                        >
+                          Deploy
+                        </a>
+                        <a
+                          href={code}
+                          target="_blank"
+                          rel="noreferrer"
+                          className="dark:text-nuevoWhite bg-nuevo font-cardo cursor-pointer font-semibold duration-150 hover:rotate-3 hover:-rotate-3 text-slate-50 dark:text-black rounded-md px-5 py-1 w-24"
+                        >
+                          Code
+                        </a>
+                      </div>
+                    </div>
+                    <div className="xl:w-[45%] py-4">
+                      <img
+                        src={src}
+                        alt="tiempo"
+                        className="w-full h-full rounded-sm"
+                      />
+                    </div>
                   </div>
-                </div>
-              ))}
+                )
+              )}
             </div>
           </div>
         </div>

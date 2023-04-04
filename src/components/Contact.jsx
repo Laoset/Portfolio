@@ -9,10 +9,10 @@ const Contact = ({ isEnglish }) => {
           name="< contacto />"
           className="w-full text-white md:h-screen bg-otroFondo dark:bg-light"
         >
-          <div className="max-w-screen-lg p-4 mx-auto flex flex-col justify-center w-full h-full">
+          <div className="max-w-screen-xl p-4 mx-auto flex flex-col justify-center w-full h-full">
             <div className="pb-8">
-              <p className="font-oswald text-4xl font-extrabold inline border-b-4 border-gray-600 dark:text-gray-900">
-                Contacto
+              <p className="font-oswald text-5xl font-extrabold inline border-b-4 border-gray-600 dark:text-gray-900">
+                {"< Contacto />"}
               </p>
               <p className="text-lg font-fireCode py-6 text-nuevoWhite dark:text-black dark:font-semibold ">
                 Completa el formulario y ponte en contacto conmigo, también
@@ -80,16 +80,16 @@ const Contact = ({ isEnglish }) => {
           name="< contact />"
           className="w-full text-white md:h-screen bg-otroFondo dark:bg-light"
         >
-          <div className="max-w-screen-lg p-4 mx-auto flex flex-col justify-center w-full h-full">
+          <div className="max-w-screen-xl p-4 mx-auto flex flex-col justify-center w-full h-full">
             <div className="pb-8">
-              <p className="font-oswald text-4xl font-extrabold inline border-b-4 border-gray-600 dark:text-gray-900">
-                Contact
+              <p className="font-oswald text-5xl font-extrabold inline border-b-4 border-gray-600 dark:text-gray-900">
+                {"< Contact />"}
               </p>
               <p className="text-lg font-fireCode py-6 text-nuevoWhite dark:text-black dark:font-semibold ">
-                Fill out the form and contact me, you can also find me in other
-                social networks you can also find me on other social networks,
-                if you use a computer try the drop down with the dropdown on the
-                left.
+                Complete the form and contact me, you can also find me in other
+                social networks, if you use you can also find me on other social
+                networks, if you use a computer If you use a computer try the
+                dropdown on the left.
               </p>
             </div>
 
@@ -113,11 +113,12 @@ const Contact = ({ isEnglish }) => {
                 />
                 <textarea
                   name="message"
-                  placeholder="Message"
+                  placeholder="Mensaje"
                   rows="10"
                   className="border-2 border-solid border-slate-400 p-2 resize-none rounded-md bg-transparent shadow-sm text-white bg-colorCards dark:bg-slate-200 focus:outline-none dark:text-black dark:shadow-nuevoOrange"
                 ></textarea>
-                <button className=" font-fireCode font-bold text-lg  bg-nuevo cursor-pointer text-nuevoWhite px-6 py-3 my-8 items-center rounded-md hover:scale-105 duration-300">
+
+                <button className=" font-fireCode font-bold text-lg  bg-nuevo duration-300 cursor-pointer text-nuevoWhite px-6 py-3 my-8 items-center rounded-md hover:scale-105 ">
                   Send
                 </button>
               </form>

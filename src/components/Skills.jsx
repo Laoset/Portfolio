@@ -93,10 +93,10 @@ const Skills = ({ isEnglish }) => {
           name="< tecnologías />"
           className="w-full text-white md:h-screen  bg-otroFondo dark:bg-light"
         >
-          <div className="max-w-screen-lg p-4 mx-auto flex flex-col justify-center w-full h-full">
+          <div className="max-w-screen-xl p-4 mx-auto flex flex-col justify-center w-full h-full">
             <div className="pb-4">
-              <p className="font-oswald text-4xl font-extrabold inline border-b-4 border-gray-600 dark:text-gray-900">
-                Tecnologías
+              <p className="font-oswald text-5xl font-extrabold inline border-b-4 border-gray-600 dark:text-gray-900">
+                {"< Tecnologías />"}
               </p>
               <p className="text-lg font-fireCode py-6 text-nuevoWhite mx-m-md dark:font-semibold dark:text-black">
                 Estas son las tecnologías en las cuales he trabajado.

@@ -18,7 +18,7 @@ function App() {
       <Home isEnglish={isEnglish} />
       <About isEnglish={isEnglish} />
       <Proyecto isEnglish={isEnglish} />
-      <Skills isEnglish={isEnglish} />
+      {/* <Skills isEnglish={isEnglish} /> */}
       <Contact isEnglish={isEnglish} />
     </div>
   );

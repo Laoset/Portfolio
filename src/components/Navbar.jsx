@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
 import { MdDarkMode } from "react-icons/md";
 import { BsSun } from "react-icons/bs";
@@ -6,6 +6,9 @@ import { Link } from "react-scroll";
 import DarkMode from "./DarkMode";
 
 const Navbar = ({ isEnglish, onLanguageToggle }) => {
+  //fixed an scroll
+
+  //
   const [nav, setNav] = useState(false);
   const handleColor = () => {
     if (getState.value !== "dark") {
@@ -36,16 +39,15 @@ const Navbar = ({ isEnglish, onLanguageToggle }) => {
     },
     {
       id: 4,
-      link: `${isEnglish === false ? "< tecnologías />" : "< technologies />"}`,
-    },
-    {
-      id: 5,
       link: `${isEnglish === false ? "< contacto />" : "< contact />"}`,
     },
   ];
 
   return (
-    <div className="flex justify-between items-center align-middle w-full h-20 text-white fixed bg-casiFondo px-4 dark:bg-light">
+    <div
+      id="navbar"
+      className="flex justify-between items-center align-middle w-full h-20 text-white fixed bg-casiFondo px-4 dark:bg-light z-50"
+    >
       <div className="p-3">
         <h1 className="hover:animate-pulse text-demas  text-5xl font-marca cursor-default">
           #AKCS

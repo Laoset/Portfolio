@@ -1,17 +1,18 @@
 import React from "react";
-
 const About = ({ isEnglish }) => {
+  const getState = document.documentElement.classList.value;
+  console.log(getState);
   return (
     <>
       {isEnglish === false ? (
         <div
           name="< sobre mi />"
-          className="w-full md:h-screen bg-otroFondo text-white dark:bg-light"
+          className="w-full md:h-screen bg-fondito2 text-white dark:bg-light "
         >
-          <div className="max-w-screen-lg p-4 mx-auto flex flex-col justify-center w-full h-full">
+          <div className="max-w-screen-xl p-4 mx-auto flex flex-col justify-center w-full h-full gap-6">
             <div className="pb-8">
-              <p className="font-oswald text-4xl font-extrabold inline border-b-4 border-gray-600 dark:text-gray-900">
-                Sobre mi
+              <p className="font-oswald text-5xl font-extrabold inline border-b-4 border-gray-600 dark:text-gray-900">
+                {"< Sobre mi />"}
               </p>
             </div>
             <p className="font-fireCode text-xl text-gray-300 py-4 mx-m-md dark:text-black dark:font-semibold indent-8">
@@ -25,43 +26,169 @@ const About = ({ isEnglish }) => {
               descubrí el mundo de la programación, que me enamoró desde el
               primer momento en que codifiqué mi primer 'Hello World!'.
             </p>
-            <br />
-            <p className="font-fireCode text-xl text-gray-300 py-4 mx-m-md dark:text-black dark:font-semibold indent-8">
-              Ahora me dedico exclusivamente al Desarrollo Web, desarrollando
-              constantemente proyectos que se verán reflejas en esta Web. ¡No
-              dudes en contactarme!
+            <p className="font-fireCode text-xl text-gray-300 pb-6 mx-m-md dark:text-black dark:font-semibold indent-8">
+              Estas son las tecnologías con las cual trabajo actualmente.
             </p>
+            <div className="flex lg:flex-row justify-around flex-col">
+              <div className="xl:flex xl:flex-row gap-4 grid grid-cols-3">
+                <img
+                  className="w-16"
+                  src="https://icongr.am/devicon/javascript-original.svg?size=128&color=currentColor"
+                  alt=""
+                />
+                <img
+                  className="w-16"
+                  src="https://icongr.am/devicon/css3-original.svg?size=128&color=currentColor"
+                  alt=""
+                />
+                <img
+                  className="w-16"
+                  src="https://icongr.am/devicon/react-original.svg?size=128&color=ffffff"
+                  alt=""
+                />
+                <img
+                  className="w-16"
+                  src="https://www.svgrepo.com/show/303557/redux-logo.svg"
+                  alt=""
+                />
+                <img
+                  className="w-16"
+                  src="https://www.svgrepo.com/show/374118/tailwind.svg"
+                  alt=""
+                />
+              </div>
+              <div className="xl:flex xl:flex-row gap-4 grid grid-cols-3">
+                <img
+                  className="w-16"
+                  src="https://icongr.am/devicon/nodejs-original.svg?size=128&color=ffffff"
+                  alt=""
+                />
+                {getState === "dark" ? (
+                  <img
+                    className="w-16 "
+                    src="https://icongr.am/devicon/express-original.svg?size=128&color=000000"
+                    alt=""
+                  />
+                ) : (
+                  <img
+                    className="w-16 "
+                    src="https://icongr.am/devicon/express-original.svg?size=128&color=ffffff"
+                    alt=""
+                  />
+                )}
+
+                <img
+                  className="w-16"
+                  src="https://icongr.am/devicon/postgresql-original.svg?size=128&color=ffffff"
+                  alt=""
+                />
+                <img
+                  className="w-16"
+                  src="https://icongr.am/devicon/sequelize-original.svg?size=128&color=ffffff"
+                  alt=""
+                />
+                <img
+                  className="w-16"
+                  src="https://icongr.am/devicon/typescript-original.svg?size=128&color=ffffff"
+                  alt=""
+                />
+              </div>
+            </div>
           </div>
         </div>
       ) : (
         <div
           name="< about me />"
-          className="w-full md:h-screen bg-otroFondo text-white dark:bg-light"
+          className="w-full md:h-screen bg-fondito2 text-white dark:bg-light "
         >
-          <div className="max-w-screen-lg p-4 mx-auto flex flex-col justify-center w-full h-full">
+          <div className="max-w-screen-xl p-4 mx-auto flex flex-col justify-center w-full h-full gap-6">
             <div className="pb-8">
-              <p className="font-oswald text-4xl font-extrabold inline border-b-4 border-gray-600 dark:text-gray-900">
-                About me
+              <p className="font-oswald text-5xl font-extrabold inline border-b-4 border-gray-600 dark:text-gray-900">
+                {"< About me />"}
               </p>
             </div>
             <p className="font-fireCode text-xl text-gray-300 py-4 mx-m-md dark:text-black dark:font-semibold indent-8">
-                👋Welcome! I am Alan Kevin Corman Samanamud and, from a very
-              early age, I was fortunate to have a personal computer that I
-              spent hours and hours taking apart piece by piece, trying to
-              understand how it worked, which generated in me a taste for
-              technology that never stopped growing. Life took me through a
-              professional career far away from the world of technology, but it
-              gave me many personal skills and satisfaction. Until I discovered
-              the world of programming, which I fell in love with from the first
-              moment I coded my first 'Hello World!
+                👋Welcome! I'm Alan Kevin Corman Samanamud and, from a very
+              early age, I was fortunate to have a personal I was fortunate
+              enough to have a personal computer on which I spent hours and
+              hours I spent hours and hours taking it apart piece by piece,
+              trying to understand how it worked. to understand how it worked,
+              which gave me a taste for technology that never stopped technology
+              that never stopped growing. Life took me through a professional
+              career path far removed from the world of technology, but it gave
+              me many personal but it gave me many personal skills and
+              satisfaction. Until I discovered the world of programming, which I
+              fell in love with from the first the first moment I coded my first
+              'Hello World!
             </p>
-            <br />
-            <p className="font-fireCode text-xl text-gray-300 py-4 mx-m-md dark:text-black dark:font-semibold indent-8">
-              I am now dedicated exclusively to Web Development, constantly
-              developing projects that will be reflected in this website.
-              constantly developing projects that will be reflected in this Web,
-              don't hesitate to contact me! feel free to contact me!
+            <p className="font-fireCode text-xl text-gray-300 pb-6 mx-m-md dark:text-black dark:font-semibold indent-8">
+              These are the technologies I am currently working with.
             </p>
+            <div className="flex lg:flex-row justify-around flex-col">
+              <div className="xl:flex xl:flex-row gap-4 grid grid-cols-3">
+                <img
+                  className="w-16"
+                  src="https://icongr.am/devicon/javascript-original.svg?size=128&color=currentColor"
+                  alt=""
+                />
+                <img
+                  className="w-16"
+                  src="https://icongr.am/devicon/css3-original.svg?size=128&color=currentColor"
+                  alt=""
+                />
+                <img
+                  className="w-16"
+                  src="https://icongr.am/devicon/react-original.svg?size=128&color=ffffff"
+                  alt=""
+                />
+                <img
+                  className="w-16"
+                  src="https://www.svgrepo.com/show/303557/redux-logo.svg"
+                  alt=""
+                />
+                <img
+                  className="w-16"
+                  src="https://www.svgrepo.com/show/374118/tailwind.svg"
+                  alt=""
+                />
+              </div>
+              <div className="xl:flex xl:flex-row gap-4 grid grid-cols-3">
+                <img
+                  className="w-16"
+                  src="https://icongr.am/devicon/nodejs-original.svg?size=128&color=ffffff"
+                  alt=""
+                />
+                {getState === "dark" ? (
+                  <img
+                    className="w-16 "
+                    src="https://icongr.am/devicon/express-original.svg?size=128&color=000000"
+                    alt=""
+                  />
+                ) : (
+                  <img
+                    className="w-16 "
+                    src="https://icongr.am/devicon/express-original.svg?size=128&color=ffffff"
+                    alt=""
+                  />
+                )}
+
+                <img
+                  className="w-16"
+                  src="https://icongr.am/devicon/postgresql-original.svg?size=128&color=ffffff"
+                  alt=""
+                />
+                <img
+                  className="w-16"
+                  src="https://icongr.am/devicon/sequelize-original.svg?size=128&color=ffffff"
+                  alt=""
+                />
+                <img
+                  className="w-16"
+                  src="https://icongr.am/devicon/typescript-original.svg?size=128&color=ffffff"
+                  alt=""
+                />
+              </div>
+            </div>
           </div>
         </div>
       )}
