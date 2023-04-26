@@ -6,9 +6,6 @@ import { Link } from "react-scroll";
 import DarkMode from "./DarkMode";
 
 const Navbar = ({ isEnglish, onLanguageToggle }) => {
-  //fixed an scroll
-
-  //
   const [nav, setNav] = useState(false);
   const handleColor = () => {
     if (getState.value !== "dark") {
@@ -44,7 +41,7 @@ const Navbar = ({ isEnglish, onLanguageToggle }) => {
   ];
 
   return (
-    <div
+    <nav
       id="navbar"
       className="flex justify-between items-center align-middle w-full h-20 text-white fixed bg-casiFondo px-4 dark:bg-light z-50"
     >
@@ -66,28 +63,32 @@ const Navbar = ({ isEnglish, onLanguageToggle }) => {
               </Link>
             </li>
           ))}
-          <DarkMode />
-          <div className="ml-1">
-            {isEnglish === false ? (
-              <button
-                onClick={onLanguageToggle}
-                alt="United States"
-                src="https://catamphetamine.gitlab.io/country-flag-icons/3x2/US.svg"
-                className="w-10 h-6 dark:text-black text-sm"
-              >
-                Eng
-              </button>
-            ) : (
-              <button
-                onClick={onLanguageToggle}
-                alt="United States"
-                src="https://catamphetamine.gitlab.io/country-flag-icons/3x2/ES.svg"
-                className="w-10 h-6 dark:text-black text-sm "
-              >
-                Spa
-              </button>
-            )}
-          </div>
+          <li>
+            <DarkMode />
+          </li>
+          <li>
+            <div className="ml-1">
+              {isEnglish === false ? (
+                <button
+                  onClick={onLanguageToggle}
+                  alt="United States"
+                  src="https://catamphetamine.gitlab.io/country-flag-icons/3x2/US.svg"
+                  className="w-10 h-6 dark:text-black text-sm"
+                >
+                  Eng
+                </button>
+              ) : (
+                <button
+                  onClick={onLanguageToggle}
+                  alt="United States"
+                  src="https://catamphetamine.gitlab.io/country-flag-icons/3x2/ES.svg"
+                  className="w-10 h-6 dark:text-black text-sm "
+                >
+                  Spa
+                </button>
+              )}
+            </div>
+          </li>
         </ul>
       </div>
 
@@ -144,7 +145,7 @@ const Navbar = ({ isEnglish, onLanguageToggle }) => {
           </div>
         </ul>
       ) : null}
-    </div>
+    </nav>
   );
 };
 

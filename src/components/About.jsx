@@ -1,19 +1,18 @@
 import React from "react";
 const About = ({ isEnglish }) => {
   const getState = document.documentElement.classList.value;
-  console.log(getState);
   return (
     <>
       {isEnglish === false ? (
-        <div
+        <section
           name="< sobre mi />"
           className="w-full md:h-screen bg-fondito2 text-white dark:bg-light "
         >
           <div className="max-w-screen-xl p-4 mx-auto flex flex-col justify-center w-full h-full gap-6">
             <div className="pb-8">
-              <p className="font-oswald text-5xl font-extrabold inline border-b-4 border-gray-600 dark:text-gray-900">
+              <h2 className="font-oswald text-5xl font-extrabold inline border-b-4 border-gray-600 dark:text-gray-900">
                 {"< Sobre mi />"}
-              </p>
+              </h2>
             </div>
             <p className="font-fireCode text-xl text-gray-300 py-4 mx-m-md dark:text-black dark:font-semibold indent-8">
                 👋¡Bienvenid@s! Soy Alan Kevin Corman Samanamud y, desde muy
@@ -95,7 +94,7 @@ const About = ({ isEnglish }) => {
               </div>
             </div>
           </div>
-        </div>
+        </section>
       ) : (
         <div
           name="< about me />"

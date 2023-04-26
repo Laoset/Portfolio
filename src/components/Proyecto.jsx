@@ -1,10 +1,11 @@
 import React from "react";
-import todo from "../assets/portfolio/todoAppNew.png";
-import rickMorty from "../assets/portfolio/rickMorty.jpg";
-import shoppingCart from "../assets/portfolio/shopping-carrito.png";
-import icare from "../assets/portfolio/icare.png";
-import perros from "../assets/portfolio/perros2.png";
-import gamecenter from "../assets/portfolio/gameCenter.png";
+import todo from "../assets/portfolio/todoAppNew.avif";
+import rickMorty from "../assets/portfolio/rickMorty.avif";
+import shoppingCart from "../assets/portfolio/shopping-carrito.avif";
+import icare from "../assets/portfolio/icare.avif";
+import perros from "../assets/portfolio/perros2.avif";
+import gamecenter from "../assets/portfolio/gameCenter.avif";
+import studioTatto from "../assets/portfolio/studiotatuaje.avif";
 const Proyecto = ({ isEnglish }) => {
   const portfolios = [
     {
@@ -64,6 +65,22 @@ const Proyecto = ({ isEnglish }) => {
     },
     {
       id: 4,
+      src: studioTatto,
+      href: "https://studiotatto.netlify.app/",
+      code: "https://github.com/Laoset/StudioTattoo",
+      parrafo:
+        "Página informativa y de contacto enfocado hacia un estudio de tatuajes, con diferentes secciones artísticas relacionadas con el tatuador, y posibilidad de turnos mediante Instagram y mensaje directo por WhatsApp.",
+      title: "Tatto Studio",
+      tech: [
+        "https://icongr.am/devicon/typescript-original.svg?size=128&color=ffffff",
+        "https://icongr.am/devicon/react-original.svg?size=128&color=ffffff",
+        "https://www.svgrepo.com/show/374118/tailwind.svg",
+      ],
+      parrafoEng:
+        "Informative and contact page focused on a tattoo studio, with different artistic sections related to the tattoo artist, and possibility of appointments via Instagram and direct message by WhatsApp.",
+    },
+    {
+      id: 5,
       src: rickMorty,
       href: "https://kevin-corman-rickmorty.netlify.app/",
       code: "https://github.com/Laoset/RickAndMortyWiki",
@@ -80,7 +97,7 @@ const Proyecto = ({ isEnglish }) => {
     },
 
     {
-      id: 5,
+      id: 6,
       src: shoppingCart,
       href: "https://shooping-cart-kcs.netlify.app/",
       code: "https://github.com/Laoset/ReduxTest",
@@ -98,7 +115,7 @@ const Proyecto = ({ isEnglish }) => {
         "Shopping cart simulator, including: filtering by product type, registration and login, and product deletion and inclusion.",
     },
     {
-      id: 6,
+      id: 7,
       src: todo,
       href: "https://kevin-corman-todo-app.netlify.app/",
       code: "https://github.com/Laoset/TodoApp",
@@ -116,15 +133,15 @@ const Proyecto = ({ isEnglish }) => {
   return (
     <>
       {isEnglish === false ? (
-        <div
+        <section
           name="< proyectos />"
           className=" flex flex-col justify-center w-full md:h-full  bg-otroFondo dark:bg-light font-fireCode "
         >
           <div className="max-w-screen-xl px-4 py-24 mx-auto flex flex-col justify-center w-full h-full">
             <div>
-              <p className="font-oswald text-5xl font-extrabold inline border-b-4 border-gray-600 dark:text-gray-900 text-white">
+              <h2 className="font-oswald text-5xl font-extrabold inline border-b-4 border-gray-600 dark:text-gray-900 text-white">
                 {"< Proyectos />"}
-              </p>
+              </h2>
             </div>
             <p className="font-fireCode py-6 text-nuevoWhite mx-m-md dark:font-semibold dark:text-black text-lg">
               Estos son mis proyectos concluidos, ¡espero tu feedback!
@@ -142,16 +159,16 @@ const Proyecto = ({ isEnglish }) => {
                         <h2 className="text-start uppercase text-2xl font-fireCode mt-4 dark:text-black text-white font-bold">
                           {title}
                         </h2>
-                        <p className="text-nuevoWhite dark:text-black text-justify">
+                        <p className="text-nuevoWhite dark:text-black ">
                           {parrafo}
                         </p>
                       </div>
                       <div className="flex flex-row justify-center">
                         {tech?.map((imagen) => (
                           <img
-                            className="w-16 h-9"
+                            className="w-16 h-9 aspect-auto"
                             src={imagen}
-                            alt="imagen"
+                            alt={imagen}
                             key={imagen}
                           />
                         ))}
@@ -187,7 +204,7 @@ const Proyecto = ({ isEnglish }) => {
               )}
             </div>
           </div>
-        </div>
+        </section>
       ) : (
         <div
           name="< projects />"
@@ -224,7 +241,7 @@ const Proyecto = ({ isEnglish }) => {
                           <img
                             className="w-16 h-9"
                             src={imagen}
-                            alt="imagen"
+                            alt={imagen}
                             key={imagen}
                           />
                         ))}

@@ -11,14 +11,14 @@ function App() {
     setIsEnglish(!isEnglish);
   };
   return (
-    <div>
+    <main>
       <Social />
       <Navbar isEnglish={isEnglish} onLanguageToggle={handleLanguageToggle} />
       <Home isEnglish={isEnglish} />
       <About isEnglish={isEnglish} />
       <Proyecto isEnglish={isEnglish} />
       <Contact isEnglish={isEnglish} />
-    </div>
+    </main>
   );
 }
 

@@ -8,7 +8,7 @@ const Home = ({ isEnglish }) => {
   return (
     <>
       {isEnglish === false ? (
-        <div name="< inicio />" className="h-screen dark:bg-light p-4">
+        <section name="< inicio />" className="h-screen dark:bg-light p-4">
           <div className="max-w-screen-xl mx-auto h-full pr-4 md:flex-row">
             <div className="flex flex-col justify-center h-full">
               <div className="flex justify-center items-center ">
@@ -19,7 +19,7 @@ const Home = ({ isEnglish }) => {
 
               <div className="h-[2px] bg-white mt-4 dark:bg-black"></div>
               <div className="flex justify-center items-center">
-                <p className="text-lg font-fireCode text-gray-300 py-4 mx-m-md dark:text-black dark:font-semibold ">
+                <span className="text-lg font-fireCode text-gray-300 py-4 mx-m-md dark:text-black dark:font-semibold ">
                   <Typewriter
                     options={{
                       strings: [
@@ -31,7 +31,7 @@ const Home = ({ isEnglish }) => {
                       loop: true,
                     }}
                   />
-                </p>
+                </span>
               </div>
               <div className="2xl:hidden flex flex-row text-white dark:text-black justify-center gap-10 py-4">
                 <a
@@ -39,6 +39,7 @@ const Home = ({ isEnglish }) => {
                   target="_blank"
                   rel="noreferrer"
                   href="https://www.linkedin.com/in/alan-kevin-corman-samanamud-22b566176/"
+                  aria-label="Linkedin"
                 >
                   <FaLinkedin size={30} />
                 </a>
@@ -47,6 +48,7 @@ const Home = ({ isEnglish }) => {
                   target="_blank"
                   rel="noreferrer"
                   href="https://github.com/Laoset"
+                  aria-label="github"
                 >
                   <FaGithub size={30} />
                 </a>
@@ -55,6 +57,7 @@ const Home = ({ isEnglish }) => {
                   target="_blank"
                   rel="noreferrer"
                   href="mailto:kevin143corman@gmail.com"
+                  aria-label="mail"
                 >
                   <HiOutlineMail size={30} />
                 </a>
@@ -74,7 +77,7 @@ const Home = ({ isEnglish }) => {
               </div>
             </div>
           </div>
-        </div>
+        </section>
       ) : (
         <div name="< home />" className="h-screen dark:bg-light p-4">
           <div className="max-w-screen-xl mx-auto h-full pr-4 md:flex-row">
@@ -87,7 +90,7 @@ const Home = ({ isEnglish }) => {
 
               <div className="h-[2px] bg-white mt-4 dark:bg-black"></div>
               <div className="flex justify-center items-center">
-                <p className="text-lg font-fireCode text-gray-300 py-4 mx-m-md dark:text-black dark:font-semibold ">
+                <span className="text-lg font-fireCode text-gray-300 py-4 mx-m-md dark:text-black dark:font-semibold ">
                   <Typewriter
                     options={{
                       strings: [
@@ -99,7 +102,7 @@ const Home = ({ isEnglish }) => {
                       loop: true,
                     }}
                   />
-                </p>
+                </span>
               </div>
               <div className="2xl:hidden flex flex-row text-white dark:text-black justify-center gap-10 py-4">
                 <a
@@ -107,6 +110,7 @@ const Home = ({ isEnglish }) => {
                   target="_blank"
                   rel="noreferrer"
                   href="https://www.linkedin.com/in/alan-kevin-corman-samanamud-22b566176/"
+                  aria-label="linkedin"
                 >
                   <FaLinkedin size={30} />
                 </a>
@@ -115,6 +119,7 @@ const Home = ({ isEnglish }) => {
                   target="_blank"
                   rel="noreferrer"
                   href="https://github.com/Laoset"
+                  aria-label="github"
                 >
                   <FaGithub size={30} />
                 </a>
@@ -123,6 +128,7 @@ const Home = ({ isEnglish }) => {
                   target="_blank"
                   rel="noreferrer"
                   href="mailto:kevin143corman@gmail.com"
+                  aria-label="mail"
                 >
                   <HiOutlineMail size={30} />
                 </a>

@@ -33,7 +33,7 @@ const Social = () => {
     },
   ];
   return (
-    <div className="hidden h-full 2xl:flex flex-col justify-center align-middle fixed">
+    <aside className="hidden h-full 2xl:flex flex-col justify-center align-middle fixed">
       <div>
         {links.map(({ id, child, href }) => (
           <li
@@ -51,7 +51,7 @@ const Social = () => {
           </li>
         ))}
       </div>
-    </div>
+    </aside>
   );
 };
 

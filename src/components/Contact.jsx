@@ -5,15 +5,15 @@ const Contact = ({ isEnglish }) => {
   return (
     <>
       {isEnglish === false ? (
-        <div
+        <section
           name="< contacto />"
           className="w-full text-white md:h-screen bg-otroFondo dark:bg-light"
         >
           <div className="max-w-screen-xl p-4 mx-auto flex flex-col justify-center w-full h-full">
             <div className="pb-8">
-              <p className="font-oswald text-5xl font-extrabold inline border-b-4 border-gray-600 dark:text-gray-900">
+              <h2 className="font-oswald text-5xl font-extrabold inline border-b-4 border-gray-600 dark:text-gray-900">
                 {"< Contacto />"}
-              </p>
+              </h2>
               <p className="text-lg font-fireCode py-6 text-nuevoWhite dark:text-black dark:font-semibold ">
                 Completa el formulario y ponte en contacto conmigo, también
                 puedes encontrarme en otras redes sociales, si usas una
@@ -56,6 +56,7 @@ const Contact = ({ isEnglish }) => {
                 className=" dark:text-black  text-white cursor-pointer hover:scale-110 duration-200 italic tracking-tight"
                 target="_blank"
                 rel="noreferrer"
+                alt="github"
               >
                 <FaGithub size="2rem" />
               </a>
@@ -64,6 +65,7 @@ const Contact = ({ isEnglish }) => {
                 className=" dark:text-black  text-white  cursor-pointer hover:scale-110 duration-200 italic tracking-tight"
                 target="_blank"
                 rel="noreferrer"
+                alt="linkedin"
               >
                 <FaLinkedin size="2rem" />
               </a>
@@ -74,7 +76,7 @@ const Contact = ({ isEnglish }) => {
               </h2>
             </div>
           </div>
-        </div>
+        </section>
       ) : (
         <div
           name="< contact />"
@@ -113,7 +115,7 @@ const Contact = ({ isEnglish }) => {
                 />
                 <textarea
                   name="message"
-                  placeholder="Mensaje"
+                  placeholder="Message"
                   rows="10"
                   className="border-2 border-solid border-slate-400 p-2 resize-none rounded-md bg-transparent shadow-sm text-white bg-colorCards dark:bg-slate-200 focus:outline-none dark:text-black dark:shadow-nuevoOrange"
                 ></textarea>
