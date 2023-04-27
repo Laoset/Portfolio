@@ -70,7 +70,7 @@ const Proyecto = ({ isEnglish }) => {
       code: "https://github.com/Laoset/StudioTattoo",
       parrafo:
         "Página informativa y de contacto enfocado hacia un estudio de tatuajes, con diferentes secciones artísticas relacionadas con el tatuador, y posibilidad de turnos mediante Instagram y mensaje directo por WhatsApp.",
-      title: "Tatto Studio",
+      title: "Tattoo Studio",
       tech: [
         "https://icongr.am/devicon/typescript-original.svg?size=128&color=ffffff",
         "https://icongr.am/devicon/react-original.svg?size=128&color=ffffff",
