@@ -99,7 +99,7 @@ const Proyecto = ({ isEnglish }) => {
     {
       id: 6,
       src: shoppingCart,
-      href: "https://shooping-cart-kcs.netlify.app/",
+      href: "https://shoopingcart.vercel.app",
       code: "https://github.com/Laoset/ReduxTest",
       parrafo:
         "Simulador de carrito de compras, incluye: filtrar por tipo de producto, registro e inicio de sesión y eliminación e inclusión de productos.",
