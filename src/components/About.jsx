@@ -23,7 +23,7 @@ const About = ({ isEnglish }) => {
               carrera profesional muy alejada del mundo de la tecnología, pero
               me brindó muchas habilidades personales y satisfacción. Hasta que
               descubrí el mundo de la programación, que me enamoró desde el
-              primer momento en que codifiqué mi primer 'Hello World!'.
+              momento en que programe mi primer 'Hello World!'.
             </p>
             <p className="font-fireCode text-xl text-gray-300 pb-6 mx-m-md dark:text-black dark:font-semibold indent-8">
               Estas son las tecnologías con las cual trabajo actualmente.
@@ -107,18 +107,15 @@ const About = ({ isEnglish }) => {
               </p>
             </div>
             <p className="font-fireCode text-xl text-gray-300 py-4 mx-m-md dark:text-black dark:font-semibold indent-8">
-                👋Welcome! I'm Alan Kevin Corman Samanamud and, from a very
-              early age, I was fortunate to have a personal I was fortunate
-              enough to have a personal computer on which I spent hours and
-              hours I spent hours and hours taking it apart piece by piece,
-              trying to understand how it worked. to understand how it worked,
-              which gave me a taste for technology that never stopped technology
-              that never stopped growing. Life took me through a professional
-              career path far removed from the world of technology, but it gave
-              me many personal but it gave me many personal skills and
-              satisfaction. Until I discovered the world of programming, which I
-              fell in love with from the first the first moment I coded my first
-              'Hello World!
+                👋Welcome! I am Alan Kevin Corman Samanamud and, from a very
+              young age, I was fortunate enough to have a personal computer on
+              which I spent hours and hours taking apart piece by piece, trying
+              to understand its functioning, which generated in me a love for
+              technology that never stopped growing. Life took me on a
+              professional career very far removed from the world of technology,
+              but it gave me many personal skills and satisfaction. Until I
+              discovered the world of programming, which I fell in love with
+              from the first moment I coded my first 'Hello World!'.
             </p>
             <p className="font-fireCode text-xl text-gray-300 pb-6 mx-m-md dark:text-black dark:font-semibold indent-8">
               These are the technologies I am currently working with.
