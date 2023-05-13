@@ -6,35 +6,16 @@ import icare from "../assets/portfolio/icare.avif";
 import perros from "../assets/portfolio/perros2.avif";
 import gamecenter from "../assets/portfolio/gameCenter.avif";
 import studioTatto from "../assets/portfolio/studiotatuaje.avif";
+import pomodoro from "../assets/portfolio/pomodoro.avif";
+
 const Proyecto = ({ isEnglish }) => {
   const portfolios = [
     {
       id: 1,
-      src: icare,
-      href: "https://pf-grupo-2.vercel.app/",
-      code: "https://github.com/ezequielnores/PF-GRUPO-2",
-      parrafo:
-        "Participación en un equipo de desarrollo ágil con sprints de una semana presentando a un Product Owner avances sobre el desarrollo de una App completa de Atención sanitaria digital.",
-      tech: [
-        "https://icongr.am/devicon/react-original.svg?size=128&color=ffffff",
-        "https://www.svgrepo.com/show/303557/redux-logo.svg",
-        "https://icongr.am/devicon/nodejs-original.svg?size=128&color=ffffff",
-        "https://icongr.am/devicon/express-original.svg?size=128&color=000000",
-        "https://icongr.am/devicon/postgresql-original.svg?size=128&color=ffffff",
-        "https://www.svgrepo.com/show/354048/material-ui.svg",
-      ],
-
-      title: "iCare",
-      parrafoEng:
-        "Participation in an agile development team with one-week sprints presenting to a Product Owner progress on the development of a complete Digital Healthcare App.",
-    },
-    {
-      id: 2,
       src: gamecenter,
       href: "https://game-center-akcs.netlify.app/",
       code: "https://github.com/Laoset/gameCenter",
-      parrafo:
-        "Aplicación que contiene 3 juegos : Memotest - WPM - Pokemon Finder",
+      parrafo: "Pagina que contiene 3 juegos : Memotest - WPM - Pokemon Finder",
       title: "Game Center",
       tech: [
         "https://icongr.am/devicon/typescript-original.svg?size=128&color=ffffff",
@@ -42,7 +23,23 @@ const Proyecto = ({ isEnglish }) => {
         "https://www.svgrepo.com/show/374118/tailwind.svg",
       ],
       parrafoEng:
-        "Application containing 3 games : Memotest - WPM - Pokemon Finder",
+        "Web page containing 3 games : Memotest - WPM - Pokemon Finder",
+    },
+    {
+      id: 2,
+      src: pomodoro,
+      href: "https://pomodoro-app-sooty.vercel.app/",
+      code: "https://github.com/Laoset/pomodoroApp",
+      parrafo:
+        "Pagina que contiene un timer estilo Pomodoro, con posibilidad de modificacion de tiempos.",
+      tech: [
+        "https://icongr.am/devicon/typescript-original.svg?size=128&color=ffffff",
+        "https://icongr.am/devicon/react-original.svg?size=128&color=ffffff",
+        "https://www.svgrepo.com/show/374118/tailwind.svg",
+      ],
+      title: "Pomodoro App",
+      parrafoEng:
+        "Page containing a Pomodoro style timer, with the possibility of time modification.",
     },
     {
       id: 3,
@@ -95,9 +92,28 @@ const Proyecto = ({ isEnglish }) => {
       parrafoEng:
         "Application that by using the rick and morty API, allows: searches, filters, sorting, favorites section and login.",
     },
-
     {
       id: 6,
+      src: icare,
+      href: "https://pf-grupo-2.vercel.app/",
+      code: "https://github.com/ezequielnores/PF-GRUPO-2",
+      parrafo:
+        "Participación en un equipo de desarrollo ágil con sprints de una semana presentando a un Product Owner avances sobre el desarrollo de una App completa de Atención sanitaria digital.",
+      tech: [
+        "https://icongr.am/devicon/react-original.svg?size=128&color=ffffff",
+        "https://www.svgrepo.com/show/303557/redux-logo.svg",
+        "https://icongr.am/devicon/nodejs-original.svg?size=128&color=ffffff",
+        "https://icongr.am/devicon/express-original.svg?size=128&color=000000",
+        "https://icongr.am/devicon/postgresql-original.svg?size=128&color=ffffff",
+        "https://www.svgrepo.com/show/354048/material-ui.svg",
+      ],
+
+      title: "iCare",
+      parrafoEng:
+        "Participation in an agile development team with one-week sprints presenting to a Product Owner progress on the development of a complete Digital Healthcare App.",
+    },
+    {
+      id: 7,
       src: shoppingCart,
       href: "https://shoopingcart.vercel.app",
       code: "https://github.com/Laoset/ReduxTest",
@@ -115,7 +131,7 @@ const Proyecto = ({ isEnglish }) => {
         "Shopping cart simulator, including: filtering by product type, registration and login, and product deletion and inclusion.",
     },
     {
-      id: 7,
+      id: 8,
       src: todo,
       href: "https://kevin-corman-todo-app.netlify.app/",
       code: "https://github.com/Laoset/TodoApp",
