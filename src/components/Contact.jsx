@@ -16,8 +16,8 @@ const Contact = ({ isEnglish }) => {
               </h2>
               <p className="text-lg font-fireCode py-6 text-nuevoWhite dark:text-black dark:font-semibold ">
                 Completa el formulario y ponte en contacto conmigo, también
-                puedes encontrarme en otras redes sociales, si usas una
-                computadora prueba con el desplegable de la izquierda.
+                puedes encontrarme en otras redes sociales, como LinkedIn y
+                Github.
               </p>
             </div>
 
@@ -50,7 +50,7 @@ const Contact = ({ isEnglish }) => {
                 </button>
               </form>
             </div>
-            <div className="flex flex-row justify-center gap-8 align-middle text-center items-center xl:hidden">
+            <div className="flex flex-row justify-center gap-8 align-middle text-center items-center 2xl:hidden">
               <a
                 href="https://github.com/Laoset"
                 className=" dark:text-black  text-white cursor-pointer hover:scale-110 duration-200 italic tracking-tight"
@@ -88,10 +88,8 @@ const Contact = ({ isEnglish }) => {
                 {"< Contact />"}
               </p>
               <p className="text-lg font-fireCode py-6 text-nuevoWhite dark:text-black dark:font-semibold ">
-                Complete the form and contact me, you can also find me in other
-                social networks, if you use you can also find me on other social
-                networks, if you use a computer If you use a computer try the
-                dropdown on the left.
+                Fill out the form and contact me, you can also find me on other
+                social networks, such as LinkedIn and Github.
               </p>
             </div>
 
@@ -125,7 +123,7 @@ const Contact = ({ isEnglish }) => {
                 </button>
               </form>
             </div>
-            <div className="flex flex-row justify-center gap-8 align-middle text-center items-center xl:hidden">
+            <div className="flex flex-row justify-center gap-8 align-middle text-center items-center 2xl:hidden">
               <a
                 href="https://github.com/Laoset"
                 className=" dark:text-black  text-white cursor-pointer hover:scale-110 duration-200 italic tracking-tight"

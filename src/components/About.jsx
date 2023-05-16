@@ -37,11 +37,6 @@ const About = ({ isEnglish }) => {
                 />
                 <img
                   className="w-16"
-                  src="https://icongr.am/devicon/css3-original.svg?size=128&color=currentColor"
-                  alt=""
-                />
-                <img
-                  className="w-16"
                   src="https://icongr.am/devicon/react-original.svg?size=128&color=ffffff"
                   alt=""
                 />
@@ -79,11 +74,6 @@ const About = ({ isEnglish }) => {
                 <img
                   className="w-16"
                   src="https://icongr.am/devicon/postgresql-original.svg?size=128&color=ffffff"
-                  alt=""
-                />
-                <img
-                  className="w-16"
-                  src="https://icongr.am/devicon/sequelize-original.svg?size=128&color=ffffff"
                   alt=""
                 />
                 <img
@@ -127,11 +117,7 @@ const About = ({ isEnglish }) => {
                   src="https://icongr.am/devicon/javascript-original.svg?size=128&color=currentColor"
                   alt=""
                 />
-                <img
-                  className="w-16"
-                  src="https://icongr.am/devicon/css3-original.svg?size=128&color=currentColor"
-                  alt=""
-                />
+
                 <img
                   className="w-16"
                   src="https://icongr.am/devicon/react-original.svg?size=128&color=ffffff"
@@ -171,11 +157,6 @@ const About = ({ isEnglish }) => {
                 <img
                   className="w-16"
                   src="https://icongr.am/devicon/postgresql-original.svg?size=128&color=ffffff"
-                  alt=""
-                />
-                <img
-                  className="w-16"
-                  src="https://icongr.am/devicon/sequelize-original.svg?size=128&color=ffffff"
                   alt=""
                 />
                 <img

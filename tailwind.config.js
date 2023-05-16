@@ -6,6 +6,7 @@ module.exports = {
     extend: {
       screens: {
         "2xl": "1680px",
+        xxl: "1600px",
       },
       backgroundImage: {
         light: "linear-gradient(90deg, #e6e9f0 0%, #eef1f5 100%)",
