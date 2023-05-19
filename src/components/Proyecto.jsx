@@ -115,8 +115,8 @@ const Proyecto = ({ isEnglish }) => {
     {
       id: 7,
       src: shoppingCart,
-      href: "https://shoopingcart.vercel.app",
-      code: "https://github.com/Laoset/ReduxTest",
+      href: "https://shoopingcart-akcs.vercel.app/",
+      code: "https://github.com/Laoset/ShoopingCart",
       parrafo:
         "Simulador de carrito de compras, incluye: filtrar por tipo de producto, registro e inicio de sesión y eliminación e inclusión de productos.",
       title: "Shopping Cart",
