@@ -37,7 +37,7 @@ const Proyecto = ({ isEnglish }) => {
         "https://icongr.am/devicon/typescript-original.svg?size=128&color=ffffff",
         "https://icongr.am/devicon/react-original.svg?size=128&color=ffffff",
         "https://icongr.am/devicon/css3-original.svg?size=128&color=currentColor",
-        "https://www.svgrepo.com/show/354112/nextjs.svg",
+        "https://www.svgrepo.com/show/354113/nextjs-icon.svg",
       ],
       parrafoEng:
         "Peripherals store, multipage, with the possibility to add products to a cart and proceed with the possible payment, soon to be implemented with Mercado Pago.",
