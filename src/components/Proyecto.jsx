@@ -7,7 +7,7 @@ import perros from "../assets/portfolio/perros2.avif";
 import gamecenter from "../assets/portfolio/gameCenter.avif";
 import studioTatto from "../assets/portfolio/studiotatuaje.avif";
 import pomodoro from "../assets/portfolio/pomodoro.avif";
-
+import ecommerce from "../assets/portfolio/ecommerce.avif";
 const Proyecto = ({ isEnglish }) => {
   const portfolios = [
     {
@@ -27,6 +27,23 @@ const Proyecto = ({ isEnglish }) => {
     },
     {
       id: 2,
+      src: ecommerce,
+      href: "https://ecommerce-vercel-tau.vercel.app/",
+      code: "https://github.com/Laoset/ecommerceVercel",
+      parrafo:
+        "Tienda de perifericos, multipagina, con posibilidad de añadir productos a un carrito y proceder con el posible pago, pronto a implementar con Mercado Pago",
+      title: "Periféricool",
+      tech: [
+        "https://icongr.am/devicon/typescript-original.svg?size=128&color=ffffff",
+        "https://icongr.am/devicon/react-original.svg?size=128&color=ffffff",
+        "https://icongr.am/devicon/css3-original.svg?size=128&color=currentColor",
+        "../../public/next.svg",
+      ],
+      parrafoEng:
+        "Peripherals store, multipage, with the possibility to add products to a cart and proceed with the possible payment, soon to be implemented with Mercado Pago.",
+    },
+    {
+      id: 3,
       src: pomodoro,
       href: "https://pomodoro-app-sooty.vercel.app/",
       code: "https://github.com/Laoset/pomodoroApp",
@@ -42,7 +59,7 @@ const Proyecto = ({ isEnglish }) => {
         "Page containing a Pomodoro style timer, with the possibility of time modification.",
     },
     {
-      id: 3,
+      id: 4,
       src: perros,
       href: "https://deploy-perritos.vercel.app/",
       code: "https://github.com/Laoset/DeployPerritos",
@@ -61,7 +78,7 @@ const Proyecto = ({ isEnglish }) => {
         "Design and development of a dog breed App that included: searches, combined filtering, sorting, API consumption, creation, modification and deletion of breeds.",
     },
     {
-      id: 4,
+      id: 5,
       src: studioTatto,
       href: "https://studiotatto.netlify.app/",
       code: "https://github.com/Laoset/StudioTattoo",
@@ -77,7 +94,7 @@ const Proyecto = ({ isEnglish }) => {
         "Informative and contact page focused on a tattoo studio, with different artistic sections related to the tattoo artist, and possibility of appointments via Instagram and direct message by WhatsApp.",
     },
     {
-      id: 5,
+      id: 6,
       src: rickMorty,
       href: "https://kevin-corman-rickmorty.netlify.app/",
       code: "https://github.com/Laoset/RickAndMortyWiki",
@@ -93,7 +110,7 @@ const Proyecto = ({ isEnglish }) => {
         "Application that by using the rick and morty API, allows: searches, filters, sorting, favorites section and login.",
     },
     {
-      id: 6,
+      id: 7,
       src: icare,
       href: "https://pf-grupo-2.vercel.app/",
       code: "https://github.com/ezequielnores/PF-GRUPO-2",
@@ -113,7 +130,7 @@ const Proyecto = ({ isEnglish }) => {
         "Participation in an agile development team with one-week sprints presenting to a Product Owner progress on the development of a complete Digital Healthcare App.",
     },
     {
-      id: 7,
+      id: 8,
       src: shoppingCart,
       href: "https://shoopingcart-akcs.vercel.app/",
       code: "https://github.com/Laoset/ShoopingCart",
@@ -131,7 +148,7 @@ const Proyecto = ({ isEnglish }) => {
         "Shopping cart simulator, including: filtering by product type, registration and login, and product deletion and inclusion.",
     },
     {
-      id: 8,
+      id: 9,
       src: todo,
       href: "https://kevin-corman-todo-app.netlify.app/",
       code: "https://github.com/Laoset/TodoApp",
