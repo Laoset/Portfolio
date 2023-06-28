@@ -11,7 +11,7 @@ const About = ({ isEnglish }) => {
           <div className="max-w-screen-xl p-4 mx-auto flex flex-col justify-center w-full h-full gap-6">
             <div className="pb-8">
               <h2 className="font-oswald text-5xl font-extrabold inline border-b-4 border-gray-600 dark:text-gray-900">
-                {"< Sobre mi />"}
+                {"< Sobre mí />"}
               </h2>
             </div>
             <p className="font-fireCode text-xl text-gray-300 py-4 mx-m-md dark:text-black dark:font-semibold indent-8">
