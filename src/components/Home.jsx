@@ -23,9 +23,8 @@ const Home = ({ isEnglish }) => {
                   <Typewriter
                     options={{
                       strings: [
-                        "Apasionado por el Desarrollo Web",
-                        "Apasionado por el Front End",
-                        "Apasionado del mundo IT",
+                        "Entusiasta por el Desarrollo Web",
+                        "Amante del mundo IT",
                       ],
                       autoStart: true,
                       loop: true,
@@ -94,9 +93,8 @@ const Home = ({ isEnglish }) => {
                   <Typewriter
                     options={{
                       strings: [
-                        "Passionate about Web Development",
-                        "Passionate about Front End",
-                        "Passionate about the IT world",
+                        "Enthusiastic about Web Development",
+                        "Lover of the IT world",
                       ],
                       autoStart: true,
                       loop: true,
