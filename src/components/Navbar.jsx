@@ -34,10 +34,10 @@ const Navbar = ({ isEnglish, onLanguageToggle }) => {
       id: 3,
       link: `${isEnglish === false ? "< proyectos />" : "< projects />"}`,
     },
-    {
-      id: 4,
-      link: `${isEnglish === false ? "< contacto />" : "< contact />"}`,
-    },
+    // {
+    //   id: 4,
+    //   link: `${isEnglish === false ? "< contacto />" : "< contact />"}`,
+    // },
   ];
 
   return (
@@ -150,5 +150,3 @@ const Navbar = ({ isEnglish, onLanguageToggle }) => {
 };
 
 export default Navbar;
-// //key={id}
-// className='text-nuevoBoton font-black text-2xl text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-rose-400 px-4 cursor-pointer  hover:scale-110 duration-200 dark:bg-dark'

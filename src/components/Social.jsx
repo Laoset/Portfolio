@@ -1,6 +1,7 @@
 import React from "react";
-import { FaLinkedin, FaGithub } from "react-icons/fa";
+import { FaLinkedin, FaGithub, FaFilePdf } from "react-icons/fa";
 import { HiOutlineMail } from "react-icons/hi";
+import resume from "../assets/portfolio/Currículum-KevinCormanNuevo.pdf";
 
 const Social = () => {
   const links = [
@@ -50,6 +51,17 @@ const Social = () => {
             </a>
           </li>
         ))}
+        <li className="flex justify-between items-center w-40 h-14 px-4 ml-[-100px] hover:ml-[-10px] duration-300 hover:rounded-md bg-nuevo2">
+          <a
+            href={resume}
+            className="flex justify-between items-center dark:text-black w-full text-white"
+            target="_blank"
+            rel="noreferrer"
+            download="Resume/CV"
+          >
+            CV <FaFilePdf size={30} />
+          </a>
+        </li>
       </div>
     </aside>
   );
