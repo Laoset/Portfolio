@@ -8,6 +8,7 @@ import gamecenter from "../assets/portfolio/gameCenter.avif";
 import studioTatto from "../assets/portfolio/studiotatuaje.avif";
 import pomodoro from "../assets/portfolio/pomodoro.avif";
 import ecommerce from "../assets/portfolio/ecommerce.avif";
+import popcorn from "../assets/portfolio/popcorn.avif";
 const Proyecto = ({ isEnglish }) => {
   const portfolios = [
     {
@@ -95,6 +96,23 @@ const Proyecto = ({ isEnglish }) => {
     },
     {
       id: 6,
+      src: popcorn,
+      href: "https://popcorn-plus.vercel.app/",
+      code: "https://github.com/Laoset/PopcornPlus",
+      parrafo:
+        "Web de streaming, mezcla entre Netflix y Disney+, consume la API de TMDB para mostrar las peliculas y series.",
+      title: "Popcorn Plus",
+      tech: [
+        "https://icongr.am/devicon/typescript-original.svg?size=128&color=ffffff",
+        "https://icongr.am/devicon/react-original.svg?size=128&color=ffffff",
+        "https://www.svgrepo.com/show/303557/redux-logo.svg",
+        "https://www.svgrepo.com/show/374118/tailwind.svg",
+      ],
+      parrafoEng:
+        "Streaming website, a mix between Netflix and Disney+, uses the TMDB API to display movies and series",
+    },
+    {
+      id: 7,
       src: rickMorty,
       href: "https://kevin-corman-rickmorty.netlify.app/",
       code: "https://github.com/Laoset/RickAndMortyWiki",
@@ -110,7 +128,7 @@ const Proyecto = ({ isEnglish }) => {
         "Application that by using the rick and morty API, allows: searches, filters, sorting, favorites section and login.",
     },
     {
-      id: 7,
+      id: 8,
       src: icare,
       href: "https://pf-grupo-2.vercel.app/",
       code: "https://github.com/ezequielnores/PF-GRUPO-2",
@@ -130,7 +148,7 @@ const Proyecto = ({ isEnglish }) => {
         "Participation in an agile development team with one-week sprints presenting to a Product Owner progress on the development of a complete Digital Healthcare App.",
     },
     {
-      id: 8,
+      id: 9,
       src: shoppingCart,
       href: "https://shoopingcart-akcs.vercel.app/",
       code: "https://github.com/Laoset/ShoopingCart",
@@ -148,7 +166,7 @@ const Proyecto = ({ isEnglish }) => {
         "Shopping cart simulator, including: filtering by product type, registration and login, and product deletion and inclusion.",
     },
     {
-      id: 9,
+      id: 10,
       src: todo,
       href: "https://kevin-corman-todo-app.netlify.app/",
       code: "https://github.com/Laoset/TodoApp",

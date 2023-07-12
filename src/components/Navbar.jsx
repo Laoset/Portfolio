@@ -34,10 +34,6 @@ const Navbar = ({ isEnglish, onLanguageToggle }) => {
       id: 3,
       link: `${isEnglish === false ? "< proyectos />" : "< projects />"}`,
     },
-    // {
-    //   id: 4,
-    //   link: `${isEnglish === false ? "< contacto />" : "< contact />"}`,
-    // },
   ];
 
   return (
@@ -67,13 +63,13 @@ const Navbar = ({ isEnglish, onLanguageToggle }) => {
             <DarkMode />
           </li>
           <li>
-            <div className="ml-1">
+            <div className="ml-3">
               {isEnglish === false ? (
                 <button
                   onClick={onLanguageToggle}
                   alt="United States"
                   src="https://catamphetamine.gitlab.io/country-flag-icons/3x2/US.svg"
-                  className="w-10 h-6 dark:text-black text-sm"
+                  className="w-10 h-6 dark:text-black text-lg"
                 >
                   Eng
                 </button>
@@ -82,7 +78,7 @@ const Navbar = ({ isEnglish, onLanguageToggle }) => {
                   onClick={onLanguageToggle}
                   alt="United States"
                   src="https://catamphetamine.gitlab.io/country-flag-icons/3x2/ES.svg"
-                  className="w-10 h-6 dark:text-black text-sm "
+                  className="w-10 h-6 dark:text-black text-lg "
                 >
                   Spa
                 </button>
