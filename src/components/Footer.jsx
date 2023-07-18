@@ -1,6 +1,6 @@
 import React from "react";
 import { FaLinkedin, FaGithub, FaFilePdf } from "react-icons/fa";
-import resume from "../assets/portfolio/Currículum-KevinCormanNuevo.pdf";
+import resume from "../assets/portfolio/Currículum-CormanKevin-2.pdf";
 const Footer = ({ isEnglish }) => {
   return (
     <>

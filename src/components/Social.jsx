@@ -1,7 +1,7 @@
 import React from "react";
 import { FaLinkedin, FaGithub, FaFilePdf } from "react-icons/fa";
 import { HiOutlineMail } from "react-icons/hi";
-import resume from "../assets/portfolio/Currículum-KevinCormanNuevo.pdf";
+import resume from "../assets/portfolio/Currículum-CormanKevin-2.pdf";
 
 const Social = () => {
   const links = [

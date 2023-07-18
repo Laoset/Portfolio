@@ -203,18 +203,18 @@ const Proyecto = ({ isEnglish }) => {
                 ({ id, src, title, href, code, parrafo, tech }) => (
                   <div
                     key={id}
-                    className="dark:shadow-sm hover:scale-105 duration-500 dark:bg-slate-200 flex xl:flex-row flex-col xl:h-80 w-full xl:gap-16 border-solid border-2 border-slate-600 p-3"
+                    className="dark:shadow-sm hover:scale-[1.02] duration-500 dark:bg-slate-200 flex xl:flex-row flex-col xl:h-80 w-full xl:gap-16 border-solid border-2 border-slate-600 p-3"
                   >
                     <div className="flex flex-col justify-between xl:w-2/4 text-center">
                       <div className="flex flex-col h-full w-full gap-6 ">
                         <h2 className="text-start uppercase text-2xl font-fireCode mt-4 dark:text-black text-white font-bold">
                           {title}
                         </h2>
-                        <p className="text-nuevoWhite dark:text-black ">
+                        <p className="text-start text-nuevoWhite dark:text-black ">
                           {parrafo}
                         </p>
                       </div>
-                      <div className="flex flex-row justify-center">
+                      <div className="flex flex-row justify-start">
                         {tech?.map((imagen) => (
                           <img
                             className="w-16 h-9 aspect-auto"
@@ -229,7 +229,7 @@ const Proyecto = ({ isEnglish }) => {
                           href={href}
                           target="_blank"
                           rel="noreferrer"
-                          className="dark:text-nuevoWhite bg-nuevo font-cardo cursor-pointer duration-150 font-semibold hover:rotate-3 hover:-rotate-3 text-slate-50  rounded-md px-5 py-1 w-24"
+                          className="dark:text-nuevoWhite bg-nuevo font-cardo cursor-pointer  font-semibold  text-slate-50  rounded-md px-5 py-1 w-24"
                         >
                           Deploy
                         </a>
@@ -237,7 +237,7 @@ const Proyecto = ({ isEnglish }) => {
                           href={code}
                           target="_blank"
                           rel="noreferrer"
-                          className="dark:text-nuevoWhite bg-nuevo font-cardo cursor-pointer font-semibold duration-150 hover:rotate-3 hover:-rotate-3 text-slate-50 dark:text-black rounded-md px-5 py-1 w-24"
+                          className="dark:text-nuevoWhite bg-nuevo font-cardo cursor-pointer font-semibold   text-slate-50 dark:text-black rounded-md px-5 py-1 w-24"
                         >
                           Code
                         </a>
