@@ -14,8 +14,8 @@ const About = ({ isEnglish }) => {
                 {"< Sobre mí />"}
               </h2>
             </div>
-            <p className="font-fireCode text-xl text-gray-300 py-4 mx-m-md dark:text-black dark:font-semibold indent-8">
-                👋¡Bienvenid@s! Soy Alan Kevin Corman Samanamud y, desde muy
+            <p className="font-fireCode text-xl text-gray-300 py-4 mx-m-md dark:text-black dark:font-semibold ">
+              👋¡Bienvenid@s! Soy Alan Kevin Corman Samanamud y, desde muy
               temprana edad, fui afortunado al tener una computadora personal en
               la que pasaba horas y horas desmontando pieza por pieza, tratando
               de entender su funcionamiento, lo cual generó en mí un gusto por
@@ -25,7 +25,7 @@ const About = ({ isEnglish }) => {
               descubrí el mundo de la programación, que me enamoró desde el
               momento en que programe mi primer 'Hello World!'.
             </p>
-            <p className="font-fireCode text-xl text-gray-300 pb-6 mx-m-md dark:text-black dark:font-semibold indent-8">
+            <p className="font-fireCode text-xl text-gray-300 pb-6 mx-m-md dark:text-black dark:font-semibold">
               Estas son las tecnologías con las cual trabajo actualmente.
             </p>
             <div className="flex lg:flex-row justify-around flex-col">
