@@ -1,6 +1,6 @@
 import React from "react";
 import todo from "../assets/portfolio/todoAppNew.avif";
-import rickMorty from "../assets/portfolio/rickMorty.avif";
+import showCrypto from "../assets/portfolio/showCrypto.avif";
 import shoppingCart from "../assets/portfolio/shopping-carrito.avif";
 import icare from "../assets/portfolio/icare.avif";
 import perros from "../assets/portfolio/perros2.avif";
@@ -113,19 +113,20 @@ const Proyecto = ({ isEnglish }) => {
     },
     {
       id: 7,
-      src: rickMorty,
-      href: "https://kevin-corman-rickmorty.netlify.app/",
-      code: "https://github.com/Laoset/RickAndMortyWiki",
+      src: showCrypto,
+      href: "https://show-crypto.vercel.app/",
+      code: "https://github.com/Laoset/showCrypto",
       parrafo:
-        "Aplicación que mediante el consumo de la API rick and morty, permite : búsquedas, filtros, ordenamientos, sección favoritos y login.",
-      title: "Rick and Morty Wiki",
+        "Aplicacion que consume la API de CoinRanking para mostrar los datos relevantes de las criptomonedas actuales, posee busqueda y filtros",
+      title: "Show Crypto",
       tech: [
+        "https://icongr.am/devicon/javascript-original.svg?size=128&color=currentColor",
         "https://icongr.am/devicon/react-original.svg?size=128&color=ffffff",
-        "https://www.svgrepo.com/show/303557/redux-logo.svg",
-        "https://icongr.am/devicon/css3-original.svg?size=128&color=currentColor",
+        "https://static-00.iconduck.com/assets.00/next-js-icon-2048x2048-5dqjgeku.png",
+        "https://www.svgrepo.com/show/374118/tailwind.svg",
       ],
       parrafoEng:
-        "Application that by using the rick and morty API, allows: searches, filters, sorting, favorites section and login.",
+        "Application that consumes the CoinRanking API to display relevant data about the current cryptocurrencies, has search and filter",
     },
     {
       id: 8,
