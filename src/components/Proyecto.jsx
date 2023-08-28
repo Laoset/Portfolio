@@ -122,7 +122,7 @@ const Proyecto = ({ isEnglish }) => {
       tech: [
         "https://icongr.am/devicon/javascript-original.svg?size=128&color=currentColor",
         "https://icongr.am/devicon/react-original.svg?size=128&color=ffffff",
-        "https://static-00.iconduck.com/assets.00/next-js-icon-2048x2048-5dqjgeku.png",
+        "https://d2nir1j4sou8ez.cloudfront.net/wp-content/uploads/2021/12/nextjs-boilerplate-logo.png",
         "https://www.svgrepo.com/show/374118/tailwind.svg",
       ],
       parrafoEng:
